@@ -1,0 +1,1156 @@
+-:Cross Minimus
+- - - - - 14 - - - - - 14 - - - - - 14 - - - - - 12:King's College Treble Bob Minimus
+- - - - - 14 - - - - - 34 - - - - - 14 - - - - - 12:Benzene Treble Bob Minimus
+- - - - - 14 - - - - - 34 - - - - - 14 - - - - - 14:Queens' College Treble Bob Minimus
+- - - - - 14 - - - 12 - 14 - 12 - - - 14 - - - - - 14:Pembroke College Treble Bob Minimus
+- - - - - 14 - - - 12 - 34 - 12 - - - 14 - - - - - 12:The Big Tree Treble Bob Minimus
+- - - - - 14 - - - 12 - 34 - 12 - - - 14 - - - - - 14:Peterhouse Treble Bob Minimus
+- - - - - 14 - - - 34 - - - 14 - - - - - 12:Reverse Xylene Alliance Minimus
+- - - - - 14 - 12 - - - 14 - - - 12 - 14 - - - - - 14:Robinson College Treble Bob Minimus
+- - - - - 14 - 12 - - - 34 - - - 12 - 14 - - - - - 12:The Other Big Tree Treble Bob Minimus
+- - - - - 14 - 12 - - - 34 - - - 12 - 14 - - - - - 14:Selwyn College Treble Bob Minimus
+- - - - - 14 - 12 - 12 - 14 - 12 - 12 - 14 - - - - - 12:St Catharine's College Treble Bob Minimus
+- - - - - 14 - 12 - 12 - 34 - 12 - 12 - 14 - - - - - 12:St John's College Treble Bob Minimus
+- - - - - 14 - 12 - 12 - 34 - 12 - 12 - 14 - - - - - 14:St Edmund's College Treble Bob Minimus
+- - - - - 14 - 34 - 34 - 34 - 34 - 34 - 14 - - - - - 12:Anthracene Treble Place Minimus
+- - - 14 - - - - - 34 - - - - - 14 - - - 12:Xylene Alliance Minimus
+- - - 14 - - - 14 - - - 14 - - - 12:Rawston Treble Bob Minimus
+- - - 14 - - - 14 - 14 - 12 - 14 - 14 - - - 14 - - - 12:Llyn Safaddan Treble Place Minimus
+- - - 14 - - - 34 - - - 14 - - - 12:Guilsfield Treble Bob Minimus
+- - - 14 - - - 34 - - - 14 - - - 14:Guilsfield Treble Bob Minimus
+- - - 14 - - - 34 14 - 14 - - 14 - 14 - 14 - - 14 - 14 34 - - - 14 - - - 14:Demi-Bristol Alliance Minimus
+- - - 14 - - 12 14 12 - - 14 - - - 14:Julie McDonnell Treble Bob Minimus
+- - - 14 - - 12 34 12 - - 14 - - - 12:Langdon Hills Treble Bob Minimus
+- - - 14 - - 12 34 12 - - 14 - - - 14:Langdon Hills Treble Bob Minimus
+- - - 14 - 12 - 14 - 12 - 14 - - - 14:Reverse Monkton Treble Bob Minimus
+- - - 14 - 12 - 34 - 12 - 14 - - - 12:Upton by Birkenhead Treble Bob Minimus
+- - - 14 - 12 - 34 - 12 - 14 - - - 14:Upton by Birkenhead Treble Bob Minimus
+- - - 14 - 12 12 14 12 12 - 14 - - - 12:Pamber Treble Bob Minimus
+- - - 14 - 12 12 34 12 12 - 14 - - - 12:Princess of Cambridge Treble Bob Minimus
+- - - 14 - 12 12 34 12 12 - 14 - - - 14:Princess of Cambridge Treble Bob Minimus
+- - - 14 - 14 - 14 - - - 12:Reverse Drayton Bassett Alliance Minimus
+- - - 14 - 14 - 34 - 14 - 14 - - - 14:Jessie Treble Place Minimus
+- - - 14 - 14 12 34 12 14 - 14 - - - 14:Orange Circus Treble Place Minimus
+- - - 14 - 34 - 14 - - - 12:Reverse Marston-on-Dove Alliance Minimus
+- - - 14 - 34 - 14 - - - 14:Reverse Burrito Alliance Minimus
+- - - 14 - 34 - 34 - 34 - 14 - - - 12:Charwelton Treble Place Minimus
+- - - 14 - 34 - 34 - 34 - 14 - - - 14:Charwelton Treble Place Minimus
+- - - 14 - 34 12 34 12 34 - 14 - - - 12:Yarwell Treble Place Minimus
+- - - 14 - 34 12 34 12 34 - 14 - - - 14:Woodbrook Treble Place Minimus
+- - - 14 12 - - 14 - - 12 14 - - - 14:Battle's Over Treble Bob Minimus
+- - - 14 12 - - 34 - - 12 14 - - - 12:Lockinge Treble Bob Minimus
+- - - 14 12 - - 34 - - 12 14 - - - 14:Lockinge Treble Bob Minimus
+- - - 14 12 - 12 14 12 - 12 14 - - - 12:Barby Treble Bob Minimus
+- - - 14 12 - 12 34 12 - 12 14 - - - 12:Reverse Derby Treble Bob Minimus
+- - - 14 12 - 12 34 12 - 12 14 - - - 14:Reverse Derby Treble Bob Minimus
+- - - 14 12 12 - 14 - 12 12 14 - - - 12:Newtown Treble Bob Minimus
+- - - 14 12 12 - 34 - 12 12 14 - - - 12:Barkham Treble Bob Minimus
+- - - 14 12 12 - 34 - 12 12 14 - - - 14:Barkham Treble Bob Minimus
+- - - 14 12 12 12 14 12 12 12 14 - - - 14:Olive Treble Bob Minimus
+- - - 14 12 12 12 34 12 12 12 14 - - - 12:Prince of Cambridge Treble Bob Minimus
+- - - 14 12 12 12 34 12 12 12 14 - - - 14:Prince of Cambridge Treble Bob Minimus
+- - - 14 12 14 12 14 - - - 14:Reverse Vulcan B2 Alliance Minimus
+- - - 14 12 34 - 34 - 34 12 14 - - - 12:Ufford Treble Place Minimus
+- - - 14 12 34 - 34 - 34 12 14 - - - 14:Marston Treble Place Minimus
+- - - 14 12 34 12 14 - - - 12:Reverse Barkeston Alliance Minimus
+- - - 14 12 34 12 14 - - - 14:Reverse Jet Provost Alliance Minimus
+- - - 14 12 34 12 34 12 34 12 14 - - - 12:Fawsley Treble Place Minimus
+- - - 14 12 34 12 34 12 34 12 14 - - - 14:Headbrook Treble Place Minimus
+- - - 14 34 - 34 34 34 - 34 14 - - - 12:Bange Treble Place Minimus
+- - - 14 34 12 34 34 34 12 34 14 - - - 12:Éloise Treble Place Minimus
+- - - 34 - 14 - - - - - 14 - - - - - 14 - 34 - - - 12:Clare College Treble Bob Minimus
+- - - 34 - 14 - - - - - 14 - - - - - 14 - 34 - - - 14:Clare Hall Treble Bob Minimus
+- - - 34 - 14 - - - 12 - 14 - 12 - - - 14 - 34 - - - 14:Darwin College Treble Bob Minimus
+- - - 34 - 14 - - - 12 - 34 - 12 - - - 14 - 34 - - - 12:Wolfson College Treble Bob Minimus
+- - - 34 - 14 - 12 - - - 14 - - - 12 - 14 - 34 - - - 14:Gonville & Caius College Treble Bob Minimus
+- - - 34 - 14 - 12 - 12 - 14 - 12 - 12 - 14 - 34 - - - 12:Girton College Treble Bob Minimus
+- - - 34 - 14 - 12 - 12 - 14 - 12 - 12 - 14 - 34 - - - 14:Homerton College Treble Bob Minimus
+- - 34 - - 14 - - 12 - - 14 - - 12 - - 14 - - 34 - - 14:Westley Heights Treble Bob Minimus
+- - 34 - 34 14 - - 12 - 12 14 - 14 - 12:Tom Buidhe Minimus
+- - 34 - 34 14 - - 12 - 12 34 - 14 - 12:Meall Dearg Minimus
+- - 34 - 34 14 - - 12 - 12 34 - 14 - 14:Sgurr nan Gillean Minimus
+- - 34 - 34 14 - 12 - 12 - 14 - 14 - 12:Carn Ghluasaid Minimus
+- - 34 - 34 14 - 12 - 12 - 34 - 14 - 12:Beinn Mhanach Minimus
+- - 34 - 34 14 - 12 - 12 - 34 - 14 - 14:Sgurr na Banachdich Minimus
+- - 34 - 34 14 - 14 - - 12 - 12 14 - 12:Carn Sgulain Minimus
+- - 34 - 34 14 - 14 - 12 - 12 - 14 - 12:Sgiath Chuil Minimus
+- - 34 - 34 14 - 14 - 34 - 34 - 14 - 12:Sgorr Dhonuill Minimus
+- - 34 - 34 14 - 14 - 34 12 34 12 14 - 12:Carn an Tuirc Minimus
+- - 34 - 34 14 - 14 12 - 12 - - 14 - 12:Carn a'Gheoidh Minimus
+- - 34 - 34 14 - 14 12 34 12 34 - 14 - 12:Sgurr a'Mhaim Minimus
+- - 34 - 34 14 - 34 - - 12 - 12 14 - 12:Beinn Teallach Minimus
+- - 34 - 34 14 - 34 - - 12 - 12 14 - 14:Meall a'Choire Leith Minimus
+- - 34 - 34 14 - 34 - 12 - 12 - 14 - 12:Beinn a'Chleibh Minimus
+- - 34 - 34 14 - 34 - 12 - 12 - 14 - 14:Geal Charn Minimus
+- - 34 - 34 14 - 34 - 34 - 34 - 14 - 12:Sgurr na Carnach Minimus
+- - 34 - 34 14 - 34 - 34 - 34 - 14 - 14:Sgurr an Lochain Minimus
+- - 34 - 34 14 - 34 - 34 12 34 12 14 - 12:Aonach Air Chrith Minimus
+- - 34 - 34 14 - 34 - 34 12 34 12 14 - 14:Sgurr na Ciste Duibhe Minimus
+- - 34 - 34 14 - 34 12 - 12 - - 14 - 12:Meall nan Ceapraichean Minimus
+- - 34 - 34 14 - 34 12 - 12 - - 14 - 14:Beinn Narnain Minimus
+- - 34 - 34 14 - 34 12 34 12 34 - 14 - 12:Sgurr Eilde Mor Minimus
+- - 34 - 34 14 - 34 12 34 12 34 - 14 - 14:Cairn Bannoch Minimus
+- - 34 - 34 14 12 - 12 - - 14 - 14 - 12:Tolmount Minimus
+- - 34 - 34 14 12 - 12 - - 34 - 14 - 12:A' Mharconaich Minimus
+- - 34 - 34 14 12 - 12 - - 34 - 14 - 14:Sgorr nam Fiannaidh Minimus
+- - 34 - 34 14 12 - 12 - 12 14 12 14 - 14:Stob Binnein Minimus
+- - 34 - 34 14 12 - 12 - 12 34 12 14 - 12:Beinn a'Bhuird Minimus
+- - 34 - 34 14 12 - 12 - 12 34 12 14 - 14:Stob Choire Claurigh Minimus
+- - 34 - 34 14 12 14 12 - 12 - 12 14 - 14:Carn a'Choire Bhoidheach Minimus
+- - 34 - 34 14 12 14 12 34 12 34 12 14 - 14:Stob Ghabhar Minimus
+- - 34 - 34 14 12 34 12 - 12 - 12 14 - 12:Aonach Mor Minimus
+- - 34 - 34 14 12 34 12 - 12 - 12 14 - 14:Ben Alder Minimus
+- - 34 - 34 14 12 34 12 34 12 34 12 14 - 12:Stob Coire Easain Minimus
+- - 34 - 34 14 12 34 12 34 12 34 12 14 - 14:Sgurr Mor Minimus
+- - 34 14 - - - 14 - - - 14 34 - - 12:Bannerdown Treble Bob Minimus
+- - 34 14 - - - 14 - - - 14 34 - - 14:Bannerdown Treble Bob Minimus
+- - 34 14 - - - 34 - - - 14 34 - - 12:Newington Treble Bob Minimus
+- - 34 14 - - 12 14 12 - - 14 34 - - 14:Larkrise Treble Bob Minimus
+- - 34 14 - - 12 34 12 - - 14 34 - - 12:Reverse Reveller Treble Bob Minimus
+- - 34 14 - 12 - 14 - 12 - 14 34 - - 14:Cock Ring Treble Bob Minimus
+- - 34 14 - 12 - 34 - 12 - 14 34 - - 12:Briefcase and Mobile Phone Treble Bob Minimus
+- - 34 14 - 12 12 14 12 12 - 14 34 - - 12:Little Solsbury Hill Treble Bob Minimus
+- - 34 14 - 12 12 14 12 12 - 14 34 - - 14:Little Solsbury Hill Treble Bob Minimus
+- - 34 14 - 12 12 34 12 12 - 14 34 - - 12:Reverse Spetchley Treble Bob Minimus
+- - 34 14 - 14 - 14 34 - - 12:Reverse Adbaston Alliance Minimus
+- - 34 14 - 14 - 14 34 - - 14:Reverse Tilton-on-the-Hill Alliance Minimus
+- - 34 14 - 14 - 34 - 14 - 14 34 - - 14:Spond Treble Place Minimus
+- - 34 14 - 14 12 34 12 14 - 14 34 - - 14:Scottsdale Treble Place Minimus
+- - 34 14 - 34 - 14 34 - - 12:Reverse Foremark Alliance Minimus
+- - 34 14 - 34 - 34 - 34 - 14 34 - - 12:Sedona Treble Place Minimus
+- - 34 14 - 34 12 34 12 34 - 14 34 - - 12:Tombstone Treble Place Minimus
+- - 34 14 12 - - 14 - - 12 14 34 - - 14:Toller Porcorum Treble Bob Minimus
+- - 34 14 12 - - 34 - - 12 14 34 - - 12:Wirral Treble Bob Minimus
+- - 34 14 12 - 12 14 12 - 12 14 34 - - 12:St Catherine's Valley Treble Bob Minimus
+- - 34 14 12 - 12 14 12 - 12 14 34 - - 14:St Catherine's Valley Treble Bob Minimus
+- - 34 14 12 - 12 34 12 - 12 14 34 - - 12:Reverse Berkley Treble Bob Minimus
+- - 34 14 12 12 - 14 - 12 12 14 34 - - 12:Charmy Down Treble Bob Minimus
+- - 34 14 12 12 - 14 - 12 12 14 34 - - 14:Charmy Down Treble Bob Minimus
+- - 34 14 12 12 - 34 - 12 12 14 34 - - 12:Sparsholt Treble Bob Minimus
+- - 34 14 12 12 12 14 12 12 12 14 34 - - 14:Madras Treble Bob Minimus
+- - 34 14 12 12 12 34 12 12 12 14 34 - - 12:East Horsley Treble Bob Minimus
+- - 34 14 12 14 - 34 - 14 12 14 34 - - 12:Sarnesfield Treble Place Minimus
+- - 34 14 12 14 - 34 - 14 12 14 34 - - 14:Prescott Treble Place Minimus
+- - 34 14 12 14 12 14 34 - - 14:Reverse South Luffenham Alliance Minimus
+- - 34 14 12 14 12 34 12 14 12 14 34 - - 12:Brinsop Treble Place Minimus
+- - 34 14 12 14 12 34 12 14 12 14 34 - - 14:Ajo Treble Place Minimus
+- - 34 14 12 34 - 34 - 34 12 14 34 - - 12:Show Low Treble Place Minimus
+- - 34 14 12 34 12 14 34 - - 12:Reverse Burrough-on-the-Hill Alliance Minimus
+- - 34 14 12 34 12 34 12 34 12 14 34 - - 12:Bisbee Treble Place Minimus
+- - 34 14 34 - 14 14 14 - 34 14 34 - - 14:Le Crêt Treble Place Minimus
+- - 34 14 34 - 14 34 14 - 34 14 34 - - 12:Swift Treble Place Minimus
+- - 34 14 34 - 14 34 14 - 34 14 34 - - 14:Chaumont Treble Place Minimus
+- - 34 14 34 - 34 14 34 - 34 14 34 - - 12:Dipper Treble Place Minimus
+- - 34 14 34 - 34 14 34 - 34 14 34 - - 14:La Joux Treble Place Minimus
+- - 34 14 34 - 34 34 34 - 34 14 34 - - 12:Clarafond Treble Place Minimus
+- - 34 14 34 12 14 14 14 12 34 14 34 - - 14:Épanezey Treble Place Minimus
+- - 34 14 34 12 14 34 14 12 34 14 34 - - 14:Le Malpas Treble Place Minimus
+- - 34 14 34 12 34 14 34 12 34 14 34 - - 14:Valleiry Treble Place Minimus
+- - 34 14 34 12 34 34 34 12 34 14 34 - - 12:Franclens Treble Place Minimus
+- 12 - 12 - 14 - - 12 - 12 14 12 - 12 - - 14 - 12 - 12 - 12:St Agatha's Treble Place Minimus
+- 12 - 12 - 14 - 34 - 14 - 12 - 12 - 12:Reverse Pyridine Alliance Minimus
+- 12 - 14:Bastow Little Bob Minimus
+- 12 - 14 - - - 14 - - - 14 - 12 - 12:Reverse Let's Call It A Day Treble Place Minimus
+- 12 - 14 - - - 34 - - - 14 - 12 - 12:Reverse Charwelton Treble Place Minimus
+- 12 - 14 - - 12 34 12 - - 14 - 12 - 12:Reverse Kilsby Treble Place Minimus
+- 12 - 14 - 12 - 14 - 12 - -:Southrise Minimus
+- 12 - 14 - 12 - 14 12 34 12 14 34 12 34 14 - 34 - 14 12 - 12 34:Sad Angel Minimus
+- 12 - 14 - 12 - 14 34 14 12 - 12 14 - 34 - 14:Jeff Tracy Minimus
+- 12 - 14 - 12 - 34 - 12 - 14 - 12 - 12:Reverse Melchbourne Treble Place Minimus
+- 12 - 14 - 12 12 14 12 12 - 14 - 12 - 12:Reverse Glendale Treble Place Minimus
+- 12 - 14 - 12 12 34 12 12 - 14 - 12 - 12:Reverse Bullhead City Treble Place Minimus
+- 12 - 14 - 12 14 - 34 14 - 14 34 - 14 12 - 12:Lady Penelope Minimus
+- 12 - 14 - 12 14 12 - 12 14 12 - 14 - 12 - 14:Kathryn Janeway Minimus
+- 12 - 14 - 12 14 34 - 14 - 14 - 34 14 12 - 12:UFO Minimus
+- 12 - 14 - 12 14 34 - 34 14 12 - 14 - 12 - 14:Chakotay Minimus
+- 12 - 14 - 14 - - - - - 14 - - - - - 14 - 14 - 12 - 12:A Partridge In A Pear Tree Treble Place Minimus
+- 12 - 14 - 14 - - - - - 14 - - - - - 14 - 14 - 12 - 14:Two Turtle Doves Treble Place Minimus
+- 12 - 14 - 14 - - 12 - 12 14 - 14 - 14:Sgurr na Ciche Minimus
+- 12 - 14 - 14 - 12 - 12 - 14 - 12 - 12 - 14 - 14 - 12 - 12:Three French Hens Treble Place Minimus
+- 12 - 14 - 14 - 12 - 12 - 14 - 12 - 12 - 14 - 14 - 12 - 14:Four Calling Birds Treble Place Minimus
+- 12 - 14 - 14 - 12 - 12 - 14 - 14 - 14:Cruach Ardrain Minimus
+- 12 - 14 - 14 - 34 - 14 12 - 14 - 14 12 34 14:Mike Mercury Minimus
+- 12 - 14 - 14 - 34 - 14 12 - 14 - 14 34 12 14:Tin-Tin Kyrano Minimus
+- 12 - 14 - 14 12 - - - 12 14 12 - - - 12 14 - 14 - 12 - 12:Five Gold Rings Treble Place Minimus
+- 12 - 14 - 14 12 - - - 12 14 12 - - - 12 14 - 14 - 12 - 14:Six Geese A-Laying Treble Place Minimus
+- 12 - 14 - 14 12 - 12 - - 14 - 14 - 14:Chno Dearg Minimus
+- 12 - 14 - 14 12 - 12 12 12 14 12 12 12 - 12 14 - 14 - 12 - 12:Nine Ladies Dancing Treble Place Minimus
+- 12 - 14 - 14 12 - 12 12 12 14 12 12 12 - 12 14 - 14 - 12 - 14:Ten Lords A-Leaping Treble Place Minimus
+- 12 - 14 - 14 12 - 12 14 - 34 - 14 34 - 34 14 - 14 34 - 34 12:Two Out Of Three Ain't Bad Minimus
+- 12 - 14 - 14 12 12 - 12 12 14 12 12 - 12 12 14 - 14 - 12 - 12:Seven Swans A-Swimming Treble Place Minimus
+- 12 - 14 - 14 12 12 - 12 12 14 12 12 - 12 12 14 - 14 - 12 - 14:Eight Maids A-Milking Treble Place Minimus
+- 12 - 14 - 14 12 12 12 - 12 14 12 - 12 12 12 14 - 14 - 12 - 12:Eleven Pipers Piping Treble Place Minimus
+- 12 - 14 - 14 12 12 12 - 12 14 12 - 12 12 12 14 - 14 - 12 - 14:Twelve Drummers Drumming Treble Place Minimus
+- 12 - 14 - 14 34 - 34 14 - 34 - 14 34 - 34 14 - 14 - 12 - 14:Freight Treble Place Minimus
+- 12 - 14 - 34 - 14 - 12 - 12:Reverse Furan Alliance Minimus
+- 12 - 14 - 34 - 14 34 12 34 14 12 34 12 14 - 12 - 14 12 - 12 34:Where Angels Sing Minimus
+- 12 - 14 - 34 - 34 - 34 - 14 - 12 - 12:Swirling Vortex of Doom Treble Place Minimus
+- 12 - 14 - 34 14 - 12 14 - 14 12 - 14 34 - 12:Brains Minimus
+- 12 - 14 - 34 14 12 - 12 14 34 - 14 - 12 - 14:Seven Of Nine Minimus
+- 12 - 14 - 34 14 12 - 14 - 14 - 12 14 34 - 12:Space 1999 Minimus
+- 12 - 14 - 34 14 34 - 34 14 34 - 14 - 12 - 14:Torres Minimus
+- 12 - 14 12 - - 34 - - 12 14 - 12 - 12:Reverse Sedona Treble Place Minimus
+- 12 - 14 12 - 12 14 12 - 12 14 - 12 - 12:Reverse Penrhos Treble Place Minimus
+- 12 - 14 12 - 12 34 12 - 12 14 - 12 - 12:Reverse Phoenix Arizona Treble Place Minimus
+- 12 - 14 12 - 14 12 - 12 14 - 12 14 - 12 - 14:Paris Minimus
+- 12 - 14 12 - 14 34 - 34 14 - 12 14 - 12 - 14:Kim Minimus
+- 12 - 14 12 12 - 14 - 12 12 14 - 12 - 12:Reverse Mesa Treble Place Minimus
+- 12 - 14 12 12 - 34 - 12 12 14 - 12 - 12:Reverse Pima Treble Place Minimus
+- 12 - 14 12 12 12 34 12 12 12 14 - 12 - 12:Reverse Ashby St Ledgers Treble Place Minimus
+- 12 - 14 12 34 12 14 - 12 - 14 12 - 14 34 12 34 14 - 12 - 14 12:Back Into Hell Minimus
+- 12 - 14 12 34 12 14 - 12 - 14 12 - 14 34 12 34 14 - 12 - 14 34:Monday Morning Minimus
+- 12 - 14 34 - 14 12 - 12 14 - 34 14 - 12 - 14:Kes Minimus
+- 12 - 14 34 - 14 34 - 34 14 - 34 14 - 12 - 14:The Doctor Minimus
+- 12 - 14 34 - 34 34 34 - 34 14 - 12 - 12:Reverse Nova Treble Place Minimus
+- 12 14 - 12 - 14 12 - 12 14 - 12 - 14 12 - 12:Chekov Minimus
+- 12 14 - 12 - 14 12 - 12 14 - 12 - 14 12 - 34:Klingon Minimus
+- 12 14 - 12 - 14 34 - 34 14 - 12 - 14 12 - 12:McCoy Minimus
+- 12 14 - 12 - 14 34 - 34 14 - 12 - 14 12 - 34:Betazoid Minimus
+- 12 14 - 34 - 14 12 - 12 14 - 34 - 14 12 - 12:Scotty Minimus
+- 12 14 - 34 - 14 12 - 12 14 - 34 - 14 12 - 34:Bajoran Minimus
+- 12 14 - 34 - 14 34 - 34 14 - 34 - 14 12 - 12:Chapel Minimus
+- 12 14 - 34 - 14 34 - 34 14 - 34 - 14 12 - 34:Romulan Minimus
+- 12 14 12 - 12 14 - 12 14 34 12:Hot Summer Night Minimus
+- 12 14 12 14 12:Reverse Erin Minimus
+- 12 14 34 - 14 12 34 14:Small Blue Cupido Minimus
+- 12 34 14 - - - 14 - - - 14 34 12 - 12:Reverse Marston Treble Place Minimus
+- 12 34 14 - - - 34 - - - 14 34 12 - 12:Reverse Ufford Treble Place Minimus
+- 12 34 14 - 12 - 34 - 12 - 14 34 12 - 12:Reverse Pilton Treble Place Minimus
+- 12 34 14 - 12 12 14 12 12 - 14 34 12 - 12:Reverse Burchur Treble Place Minimus
+- 12 34 14 - 12 12 34 12 12 - 14 34 12 - 12:Reverse Kingswood Treble Place Minimus
+- 12 34 14 12 - - 34 - - 12 14 34 12 - 12:Reverse Show Low Treble Place Minimus
+- 12 34 14 12 - 12 14 12 - 12 14 34 12 - 12:Reverse Bearwood Treble Place Minimus
+- 12 34 14 12 - 12 34 12 - 12 14 34 12 - 12:Reverse Hopleys Treble Place Minimus
+- 12 34 14 12 12 - 14 - 12 12 14 34 12 - 12:Reverse Snowflake Treble Place Minimus
+- 12 34 14 12 12 - 34 - 12 12 14 34 12 - 12:Reverse Tubac Treble Place Minimus
+- 12 34 14 12 12 12 34 12 12 12 14 34 12 - 12:Reverse Edgcote Treble Place Minimus
+- 12 34 14 34 14 - - 12 - 12 14 - 14 - 12:Beinn Ime Minimus
+- 12 34 14 34 14 - - 12 - 12 14 - 14 - 14:Sgorr Dhearg Minimus
+- 12 34 14 34 14 - - 12 - 12 34 - 14 - 14:Beinn Sgulaird Minimus
+- 12 34 14 34 14 - 12 - 12 - 14 - 14 - 12:Mullach Clach a'Bhlair Minimus
+- 12 34 14 34 14 - 12 - 12 - 14 - 14 - 14:Sgurr a'Mhaoraich Minimus
+- 12 34 14 34 14 - 12 - 12 - 34 - 14 - 14:Luinne Bheinn Minimus
+- 12 34 14 34 14 12 - 12 - - 14 - 14 - 12:Ladhar Bheinn Minimus
+- 12 34 14 34 14 12 - 12 - - 14 - 14 - 14:Beinn Fhada Minimus
+- 12 34 14 34 14 12 - 12 - - 34 - 14 - 14:Ben Vorlich Minimus
+- 14:Original Minimus
+- 14 - - - 14 - - - 14 - 12:Burrito Alliance Minimus
+- 14 - - - 34 - - - 14 - 12:Marston-on-Dove Alliance Minimus
+- 14 - - - 34 - - - 14 - 14:Drayton Bassett Alliance Minimus
+- 14 - - 12 - 12 14 - 14 - - 34 - 34 12:Beinn a'Chroin Minimus
+- 14 - - 12 - 12 14 - 14 - 34 - 34 - 12:An Socach Minimus
+- 14 - - 12 - 12 14 - 14 34 - 34 - - 12:Carn Dearg Minimus
+- 14 - - 12 - 12 34 - 14 - - 34 - 34 12:Meall a'Chrasgaidh Minimus
+- 14 - - 12 - 12 34 - 14 - - 34 - 34 14:Carn Bhac Minimus
+- 14 - - 12 - 12 34 - 14 - 34 - 34 - 12:Beinn Tarsuinn Minimus
+- 14 - - 12 - 12 34 - 14 - 34 - 34 - 14:Creag a'Mhaim Minimus
+- 14 - - 12 - 12 34 - 14 34 - 34 - - 12:Mount Keen Minimus
+- 14 - - 12 - 12 34 - 14 34 - 34 - - 14:Meall Gorm Minimus
+- 14 - - 12 14 12 - - 14 - 14:Stoughton Alliance Minimus
+- 14 - - 12 34 12 - - 14 - 12:Orton-on-the-Hill Alliance Minimus
+- 14 - - 12 34 12 - - 14 - 14:Denstone Alliance Minimus
+- 14 - 12 - 12 - 14 - 14 - - 34 - 34 12:Binnein Beag Minimus
+- 14 - 12 - 12 - 14 - 14 - 34 - 34 - 12:Stob a'Choire Odhair Minimus
+- 14 - 12 - 12 - 14 - 14 34 - 34 - - 12:Bidein a'Choire Sheasgaich Minimus
+- 14 - 12 - 12 - 34 - 14 - - 34 - 34 12:Am Basteir Minimus
+- 14 - 12 - 12 - 34 - 14 - - 34 - 34 14:Beinn Tulaichean Minimus
+- 14 - 12 - 12 - 34 - 14 - 34 - 34 - 12:Beinn na Lap Minimus
+- 14 - 12 - 12 - 34 - 14 - 34 - 34 - 14:Sgurr Mhic Choinnich Minimus
+- 14 - 12 - 12 - 34 - 14 34 - 34 - - 12:Carn na Caim Minimus
+- 14 - 12 - 12 - 34 - 14 34 - 34 - - 14:Meall Chuaich Minimus
+- 14 - 12 - 14 - 12 - 14 - 14:Sparsholt Alliance Minimus
+- 14 - 12 - 34 - 12 - 14 - 12:Allexton Alliance Minimus
+- 14 - 12 - 34 - 12 - 14 - 14:Colton Alliance Minimus
+- 14 - 12 12 14 12 12 - 14 - 12:Enchilada Alliance Minimus
+- 14 - 12 12 34 12 12 - 14 - 12:Sutton Scarsdale Alliance Minimus
+- 14 - 12 12 34 12 12 - 14 - 14:Lichfield St Chad Alliance Minimus
+- 14 - 12 14 - 12:Parsley Alliance Minimus
+- 14 - 12 14 - 12 - 14 - 12 14 - 34 14 34 - 34:Lieutenant Ninety Minimus
+- 14 - 12 14 - 14:Parsley Alliance Minimus
+- 14 - 12 14 34:Wader Wodon Alliance Minimus
+- 14 - 12 14 34 - 14 - 34 - 14 - 34 14 12 - 12:Thunderbirds Minimus
+- 14 - 14 - - - 14 - - - 14 - 14 - 12:Reverse Jessie Treble Place Minimus
+- 14 - 14 - - 12 - 12 14 - - 34 - 34 12:Sgurr na Ruaidhe Minimus
+- 14 - 14 - - 12 - 12 14 - 34 - 34 - 12:Glas Bheinn Mhor Minimus
+- 14 - 14 - - 12 - 12 14 34 - 34 - - 12:Sgurr nan Clach Geala Minimus
+- 14 - 14 - - 12 14 12 - - 14 - 14 - 12:Reverse Flagstaff Treble Place Minimus
+- 14 - 14 - 12 - 12 - 14 - - 34 - 34 12:Sgor na h-Ulaidh Minimus
+- 14 - 14 - 12 - 12 - 14 - 34 - 34 - 12:Stob Daimh Minimus
+- 14 - 14 - 12 - 12 - 14 34 - 34 - - 12:Sgurr Choinnich Minimus
+- 14 - 14 - 12 - 14 - 12 - 14 - 14 - 12:Reverse Cold Ashby Treble Place Minimus
+- 14 - 14 - 12 12 14 12 12 - 14 - 14 - 12:Reverse Woonton Treble Place Minimus
+- 14 - 14 - 14 - 12:Plain Bob Minimus
+- 14 - 14 - 14 - 14 - 14 - 14 - 14 - 12:Dust and Debris Treble Place Minimus
+- 14 - 14 - 14 - 14 - 14 12 34 12 14 - 14:Llangasty Treble Place Minimus
+- 14 - 14 - 14 12 14 34 - 14 - 14 - 34 14 - 14:Virgil Tracy Minimus
+- 14 - 14 - 14 34:Cherington Alliance Minimus
+- 14 - 14 - 14 34 12 34 14 - 14 - 14 34 12 34 14 - 14 - 14 - 12:Lismore Treble Place Minimus
+- 14 - 14 - 14 34 14 34 14 - 14 - 14 - 14 34 14 - 14 - 14 34 14:St Mary-Le-Wigford Court Treble Place Minimus
+- 14 - 14 - 34 - 14 - 14 - 14 - 12 - 14:Andrew Haylor Treble Place Minimus
+- 14 - 14 - 34 - 34 - 14 - - 34 - 34 12:Ben Oss Minimus
+- 14 - 14 - 34 - 34 - 14 - 34 - 34 - 12:Creise Minimus
+- 14 - 14 - 34 - 34 - 14 34 - 34 - - 12:Sgurr a'Bhealaich Dheirg Minimus
+- 14 - 14 - 34 12 34 12 14 - - 34 - 34 12:Glas Maol Minimus
+- 14 - 14 - 34 12 34 12 14 - 34 - 34 - 12:Meall Corranaich Minimus
+- 14 - 14 - 34 12 34 12 14 34 - 34 - - 12:Beinn Eibhinn Minimus
+- 14 - 14 12 - - 14 - - 12 14 - 14 - 12:Reverse Spond Treble Place Minimus
+- 14 - 14 12 - 12 - - 14 - - 34 - 34 12:Carn an Fhidhleir Minimus
+- 14 - 14 12 - 12 - - 14 - 34 - 34 - 12:Broad Cairn Minimus
+- 14 - 14 12 - 12 - - 14 34 - 34 - - 12:Sgurr Breac Minimus
+- 14 - 14 12 - 12 14 12 - 12 14 - 14 - 12:Reverse Yazor Treble Place Minimus
+- 14 - 14 12 12 - 14 - 12 12 14 - 14 - 12:Reverse Lyonshall Treble Place Minimus
+- 14 - 14 12 12 12 14 12 12 12 14 - 14 - 12:Reverse Moonlight Treble Place Minimus
+- 14 - 14 12 14 - 12:Lonk Bob Minimus
+- 14 - 14 12 14 - 12 - 14 - 14 - 14 - 12 - 14 12 14 - 14 - 12:Boxford Treble Place Minimus
+- 14 - 14 12 14 - 12 - 14 12 14 - 14 - 12:Llangadog Treble Place Minimus
+- 14 - 14 12 14 - 14:Reverse Grandsire Minimus
+- 14 - 14 12 14 12 - 12 14:Black Pudding Minimus
+- 14 - 14 12 14 34 12:Dusty Bob Minimus
+- 14 - 14 12 14 34 12 34 14 - 14 - 14 34 12 34 14 12 14 - 14 - 12:Topsy Turvy Treble Place Minimus
+- 14 - 14 12 14 34 14:Geraint Thomas Place Minimus
+- 14 - 14 12 14 34 14 34 14 12 14 - 14 - 14 34 14 - 14 - 14 34 14:Lincoln Court Treble Place Minimus
+- 14 - 14 12 34 12 34 - 14 - - 34 - 34 12:Carn an t-Sagairt Mor Minimus
+- 14 - 14 12 34 12 34 - 14 - 34 - 34 - 12:Sgurr Fhuar-Thuill Minimus
+- 14 - 14 12 34 12 34 - 14 34 - 34 - - 12:Sgurr Choinnich Mor Minimus
+- 14 - 14 34 14 - 14 - 14:In These Unprecedented And Challenging Times Our First Priority Is The Safety Of Our Staff Alliance Minimus
+- 14 - 34:Llanarthne Little Bob Minimus
+- 14 - 34 - - 12 - 12 14 - - 34 - 34 12:Gulvain Minimus
+- 14 - 34 - - 12 - 12 14 - - 34 - 34 14:Stob Coire Sgriodain Minimus
+- 14 - 34 - - 12 - 12 14 - 34 - 34 - 12:Conival Minimus
+- 14 - 34 - - 12 - 12 14 - 34 - 34 - 14:Stob Coire a'Chairn Minimus
+- 14 - 34 - - 12 - 12 14 34 - 34 - - 12:Sgairneach Mhor Minimus
+- 14 - 34 - - 12 - 12 14 34 - 34 - - 14:Mullach na Dheiragain Minimus
+- 14 - 34 - 12 - 12 - 14 - - 34 - 34 12:Druim Shionnach Minimus
+- 14 - 34 - 12 - 12 - 14 - - 34 - 34 14:Ciste Dhubh Minimus
+- 14 - 34 - 12 - 12 - 14 - 34 - 34 - 12:Sgurr Ban Minimus
+- 14 - 34 - 12 - 12 - 14 - 34 - 34 - 14:Maol Chinn-Dearg Minimus
+- 14 - 34 - 12 - 12 - 14 34 - 34 - - 12:Carn nan Gobhar Minimus
+- 14 - 34 - 12 - 12 - 14 34 - 34 - - 14:An Gearanach Minimus
+- 14 - 34 - 14 - 12:Double Bob Minimus
+- 14 - 34 - 14 - 12 - 14 12 34 12 14 - 12 - 14 - 34 - 14 - 12:Guisborough Treble Place Minimus
+- 14 - 34 - 14 - 14:Reverse Bob Minimus
+- 14 - 34 - 14 - 14 - 14 - 34 - 14 - 14 - 14 - 34 - 14 - -:Sixty Minimus
+- 14 - 34 - 14 - 14 34 14 - 12 14 - 14 - 14 12:Robert the Robot Minimus
+- 14 - 34 - 14 12 - 12 14 34 14 - 12 - 14 - 12:Captain Scarlet Minimus
+- 14 - 34 - 14 34:Stanway Alliance Minimus
+- 14 - 34 - 14 34 - 14 - 34 - 14 12 14 34 - 34:Melody Angel Minimus
+- 14 - 34 - 14 34 12 34 14 - 34 - 14 34 12 34 14 - 34 - 14 - 12:Spirolux Treble Place Minimus
+- 14 - 34 - 14 34 12 34 14 12 34 12 14 34 12 34 14 - 34 - 14 - 12:Newtown Treble Place Minimus
+- 14 - 34 - 14 34 14 34 14 - 34 - 14 - 12:Ulula Treble Place Minimus
+- 14 - 34 - 34 - 34 - 14 - - 34 - 34 12:Beinn Achaladair Minimus
+- 14 - 34 - 34 - 34 - 14 - - 34 - 34 14:Stob Coir an Albannaich Minimus
+- 14 - 34 - 34 - 34 - 14 - 12:Furan Alliance Minimus
+- 14 - 34 - 34 - 34 - 14 - 34 - 34 - 12:Meall Ghaordaidh Minimus
+- 14 - 34 - 34 - 34 - 14 - 34 - 34 - 14:Meall nan Tarmachan Minimus
+- 14 - 34 - 34 - 34 - 14 34 - 34 - - 12:Carn Mairg Minimus
+- 14 - 34 - 34 - 34 - 14 34 - 34 - - 14:Beinn lutharn Mhor Minimus
+- 14 - 34 - 34 - 34 - 34 - 34 - 14 - 12:Pyridine Alliance Minimus
+- 14 - 34 - 34 12 34 12 14 - - 34 - 34 12:Braigh Coire Chruinn-Bhalgain Minimus
+- 14 - 34 - 34 12 34 12 14 - - 34 - 34 14:Ben Starav Minimus
+- 14 - 34 - 34 12 34 12 14 - 34 - 34 - 12:Stob Coire Sgreamhach Minimus
+- 14 - 34 - 34 12 34 12 14 - 34 - 34 - 14:Beinn Heasgarnich Minimus
+- 14 - 34 - 34 12 34 12 14 34 - 34 - - 12:Beinn Dorain Minimus
+- 14 - 34 - 34 12 34 12 14 34 - 34 - - 14:Beinn a'Chlachair Minimus
+- 14 - 34 12 - 12 - - 14 - - 34 - 34 12:Creag Leacach Minimus
+- 14 - 34 12 - 12 - - 14 - - 34 - 34 14:Beinn a'Chochuill Minimus
+- 14 - 34 12 - 12 - - 14 - 34 - 34 - 12:Beinn Eunaich Minimus
+- 14 - 34 12 - 12 - - 14 - 34 - 34 - 14:Creag Mhor Minimus
+- 14 - 34 12 - 12 - - 14 34 - 34 - - 12:Spidean Coire nan Clach Minimus
+- 14 - 34 12 - 12 - - 14 34 - 34 - - 14:Lurg Mhor Minimus
+- 14 - 34 12 34 12 34 - 14 - - 34 - 34 12:Toll Creagach Minimus
+- 14 - 34 12 34 12 34 - 14 - - 34 - 34 14:Sgurr Fiona Minimus
+- 14 - 34 12 34 12 34 - 14 - 34 - 34 - 12:Stob Poite Coire Ardair Minimus
+- 14 - 34 12 34 12 34 - 14 - 34 - 34 - 14:Bidein a'Ghlas Thuill Minimus
+- 14 - 34 12 34 12 34 - 14 34 - 34 - - 12:Na Gruagaichean Minimus
+- 14 - 34 12 34 12 34 - 14 34 - 34 - - 14:Cairn of Claise Minimus
+- 14 - 34 14 - 14 34 - 14 - 12 14 - 14 - 14 12:Steve Zodiac Minimus
+- 14 - 34 34 34 - 14 - 12:Countryside Alliance Minimus
+- 14 12 - - 14 - - 12 14 - 14:Tilton-on-the-Hill Alliance Minimus
+- 14 12 - - 34 - - 12 14 - 12:Foremark Alliance Minimus
+- 14 12 - - 34 - - 12 14 - 14:Adbaston Alliance Minimus
+- 14 12 - 12 - - 14 - 14 - - 34 - 34 12:Sgurr Dubh Mor Minimus
+- 14 12 - 12 - - 14 - 14 - 34 - 34 - 12:Sgurr na Sgine Minimus
+- 14 12 - 12 - - 14 - 14 34 - 34 - - 12:Meall Buidhe Minimus
+- 14 12 - 12 - - 34 - 14 - - 34 - 34 12:A' Bhuidheanach Bheag Minimus
+- 14 12 - 12 - - 34 - 14 - - 34 - 34 14:Driesh Minimus
+- 14 12 - 12 - - 34 - 14 - 34 - 34 - 12:Mullach nan Coirean Minimus
+- 14 12 - 12 - - 34 - 14 - 34 - 34 - 14:Beinn Bhuidhe Minimus
+- 14 12 - 12 - - 34 - 14 34 - 34 - - 12:Stob Ban Minimus
+- 14 12 - 12 - - 34 - 14 34 - 34 - - 14:Inaccessible Pinnacle Minimus
+- 14 12 - 12 - 12 14 12 14 - - 34 - 34 14:Aonach Beag Minimus
+- 14 12 - 12 - 12 14 12 14 - 34 - 34 - 14:Cairn Toul Minimus
+- 14 12 - 12 - 12 14 12 14 34 - 34 - - 14:Braeriach Minimus
+- 14 12 - 12 - 12 34 12 14 - - 34 - 34 12:Stob a'Choire Mheadhoin Minimus
+- 14 12 - 12 - 12 34 12 14 - - 34 - 34 14:Ben Macdui Minimus
+- 14 12 - 12 - 12 34 12 14 - 34 - 34 - 12:Sgurr nan Conbhairean Minimus
+- 14 12 - 12 - 12 34 12 14 - 34 - 34 - 14:Ben Nevis Minimus
+- 14 12 - 12 - 12 34 12 14 34 - 34 - - 12:Stob Coire an Laoigh Minimus
+- 14 12 - 12 - 12 34 12 14 34 - 34 - - 14:Beinn Ghlas Minimus
+- 14 12 - 12 14 - 14 34 14 - 12 - 14 - 14 - 34:Alan Tracy Minimus
+- 14 12 - 12 14 - 14 34 14 - 34 - 14 - 14 - 12:Lieutenant Green Minimus
+- 14 12 - 12 14 12 - 12 14 - 12:Chimichanga Alliance Minimus
+- 14 12 - 12 14 34 - 14 34 - 34 14 - 14 - 34 - 14 - 12 - 14 12:Dead Ringer For Love Minimus
+- 14 12 - 12 14 34 - 14 34 - 34 14 - 14 - 34 - 14 - 12 - 14 34:Sentimental Lady Minimus
+- 14 12 - 12 34 12 - 12 14 - 12:Taddington Alliance Minimus
+- 14 12 - 12 34 12 - 12 14 - 14:Norbury Alliance Minimus
+- 14 12 - 14 - 12:Sage Alliance Minimus
+- 14 12 - 14 - 12 - 14 - 12 14 34 - 14 34 - 34:Cloudbase Minimus
+- 14 12 - 14 - 14:Sage Alliance Minimus
+- 14 12 - 14 34:Ypsen Harpen Alliance Minimus
+- 14 12 - 14 34 - 14 - 34 - 14 34 - 14 12 - 12:X-2-Zero Minimus
+- 14 12 12 - 14 - 12 12 14 - 12:Tamale Alliance Minimus
+- 14 12 12 - 34 - 12 12 14 - 12:Cubley Alliance Minimus
+- 14 12 12 - 34 - 12 12 14 - 14:Bobbington Alliance Minimus
+- 14 12 12 12 14 12 12 12 14 - 14:South Croxton Alliance Minimus
+- 14 12 12 12 34 12 12 12 14 - 12:Elvaston Alliance Minimus
+- 14 12 12 12 34 12 12 12 14 - 14:Chebsey Alliance Minimus
+- 14 12 14 - 14 - 12:Soay Bob Minimus
+- 14 12 14 - 14 - 14 - 14 - 14 12 14 - 14:Ozymandias Treble Place Minimus
+- 14 12 14 - 14 34 - 34 14 - 12 - 14 - 14 - 34:Troy Tempest Minimus
+- 14 12 14 - 14 34 - 34 14 - 34 - 14 - 14 - 12:Phones Minimus
+- 14 12 14 12 - 12 - 12 14 - - 34 - 34 14:Ben Cruachan Minimus
+- 14 12 14 12 - 12 - 12 14 - 34 - 34 - 14:Creag Meagaidh Minimus
+- 14 12 14 12 - 12 - 12 14 34 - 34 - - 14:Binnein Mor Minimus
+- 14 12 14 12 14 - 14:Reverse Court Place Minimus
+- 14 12 14 12 14 - 14 12 14 - 14 12 14 34 14 12 14 12 14 34 14 - 14:Platinum Pink Treble Place Minimus
+- 14 12 34 12 - 12 - 12 14 - - 34 - 34 12:Lochnagar Minimus
+- 14 12 34 12 - 12 - 12 14 - - 34 - 34 14:Ben Lui Minimus
+- 14 12 34 12 - 12 - 12 14 - 34 - 34 - 12:Derry Cairngorm Minimus
+- 14 12 34 12 - 12 - 12 14 - 34 - 34 - 14:Sgurr na Lapaich Minimus
+- 14 12 34 12 - 12 - 12 14 34 - 34 - - 12:Beinn Bhrotain Minimus
+- 14 12 34 12 - 12 - 12 14 34 - 34 - - 14:Bidean nam Bian Minimus
+- 14 12 34 12 14 - 12:Reverse St Nicholas Bob Minimus
+- 14 12 34 12 14 - 12 - 14 - 34 - 14 - 12 - 14 12 34 12 14 - 12:Reverse Spirolux Treble Place Minimus
+- 14 12 34 12 14 - 14:Canterbury Place Minimus
+- 14 12 34 12 14 34:Wyck Rissington Alliance Minimus
+- 14 12 34 12 14 34 12 34 14 - 34 - 14 34 12 34 14 12 34 12 14 - 12:Brimpton Treble Place Minimus
+- 14 12 34 12 14 34 12 34 14 12 34 12 14 34 12 34 14 12 34 12 14 - 12:Chaddleworth Treble Place Minimus
+- 14 12 34 12 34 12 14 12 14 - - 34 - 34 14:Ben Wyvis Minimus
+- 14 12 34 12 34 12 14 12 14 - 34 - 34 - 14:Beinn a'Chaorainn Minimus
+- 14 12 34 12 34 12 14 12 14 34 - 34 - - 14:Glas Tulaichean Minimus
+- 14 12 34 12 34 12 34 12 14 - - 34 - 34 12:Beinn a'Chreachain Minimus
+- 14 12 34 12 34 12 34 12 14 - - 34 - 34 14:Sgurr a'Chaorachain Minimus
+- 14 12 34 12 34 12 34 12 14 - 34 - 34 - 12:Sgurr a'Choire Ghlais Minimus
+- 14 12 34 12 34 12 34 12 14 - 34 - 34 - 14:Spidean a'Choire Leith Minimus
+- 14 12 34 12 34 12 34 12 14 34 - 34 - - 12:Schiehallion Minimus
+- 14 12 34 12 34 12 34 12 14 34 - 34 - - 14:Sgurr Fhuaran Minimus
+- 14 12 34 14 - 14 - 12 14 - 12 - 14 - 14 - 34:Scott Tracy Minimus
+- 14 12 34 14 - 14 - 12 14 - 34 - 14 - 14 - 12:Colonel White Minimus
+- 14 34 - 14 - 14 - 34 14 - 12 14 - 14 - 14 12:Zoonie Minimus
+- 14 34 - 14 - 14 12 34 14 - 12 - 14 - 14 - 34:Marina Minimus
+- 14 34 - 14 - 14 34 12 14 - 12 - 14 - 14 - 34:BIG RAT Minimus
+- 14 34 - 14 - 14 34 12 14 - 34 - 14 - 14 - 12:Stingray Minimus
+- 14 34 - 34 14:St Alphege Minimus
+- 14 34 - 34 14 12 - 14 12 - 12 14 - 14 - 12 - 14 - 34 - 14 12:Everything Louder Than Everything Else Minimus
+- 14 34 - 34 14 12 - 14 12 - 12 14 - 14 - 12 - 14 - 34 - 14 34:Rattlesnake Shake Minimus
+- 14 34 - 34 34 34 - 34 14 - 12:Quesadilla Alliance Minimus
+- 14 34 12 14 - 14 - 12 14 - 12 - 14 - 14 - 34:Atlanta Shore Minimus
+- 14 34 12 14 - 14 - 12 14 - 34 - 14 - 14 - 12:Captain Blue Minimus
+- 14 34 14:Badbury Minimus
+- 14 34 14 - - 12 14 12 - - 14 34 14 - 12:Reverse Cottonwood Treble Place Minimus
+- 14 34 14 - - 12 34 12 - - 14 34 14 - 12:Reverse Moorhampton Treble Place Minimus
+- 14 34 14 - 12:Barton Little Bob Minimus
+- 14 34 14 - 12 - 14 - 12 - 14 34 14 - 12:Reverse Kingman Treble Place Minimus
+- 14 34 14 - 12 - 14 - 14 34 14 - 14 - 12:Peterborough Treble Place Minimus
+- 14 34 14 - 12 - 34 - 12 - 14 34 14 - 12:Reverse Sugwas Pool Treble Place Minimus
+- 14 34 14 - 14:Melsonby Little Place Minimus
+- 14 34 14 - 14 - 34 - 14 - 12 14 - 14 - 14 12:Fireball XL5 Minimus
+- 14 34 14 - 14 - 34 - 14 - 14 34 14 - 12:Bennett Treble Place Minimus
+- 14 34 14 12 - - 14 - - 12 14 34 14 - 12:Reverse Prescott Treble Place Minimus
+- 14 34 14 12 - - 34 - - 12 14 34 14 - 12:Reverse Sarnesfield Treble Place Minimus
+- 14 34 14 12 12 12 34 12 12 12 14 34 14 - 12:Reverse Swainshill Treble Place Minimus
+- 14 34 14 34:Coln Valley Little Alliance Minimus
+- 14 [2413] [321]4 [3142] 14 - 14:Reverse Simple Jump Minimus
+- 34 - - - 14 - - - - - 14 - - - - - 14 - - - 34 - 12:Jesus College Treble Bob Minimus
+- 34 - - - 14 - - - - - 14 - - - - - 14 - - - 34 - 14:Christ's College Treble Bob Minimus
+- 34 - - - 14 - - - 12 - 14 - 12 - - - 14 - - - 34 - 14:Trinity College Treble Bob Minimus
+- 34 - - - 14 - - - 12 - 34 - 12 - - - 14 - - - 34 - 12:Trinity Hall Treble Bob Minimus
+- 34 - - - 14 - 12 - - - 14 - - - 12 - 14 - - - 34 - 14:Magdalene College Treble Bob Minimus
+- 34 - - - 14 - 12 - 12 - 14 - 12 - 12 - 14 - - - 34 - 12:Murray Edwards College Treble Bob Minimus
+- 34 - - - 14 - 12 - 12 - 14 - 12 - 12 - 14 - - - 34 - 14:Newnham College Treble Bob Minimus
+- 34 - 14 - - - 14 - - - 14 - 34 - 12:Christchurch and Southampton District Treble Bob Minimus
+- 34 - 14 - - - 14 - - - 14 - 34 - 14:Christchurch and Southampton District Treble Bob Minimus
+- 34 - 14 - - - 34 - - - 14 - 34 - 12:Reverse Upton by Birkenhead Treble Bob Minimus
+- 34 - 14 - - 12 14 12 - - 14 - 34 - 14:Ovington Treble Bob Minimus
+- 34 - 14 - - 12 34 12 - - 14 - 34 - 12:Reverse For the Fallen Treble Bob Minimus
+- 34 - 14 - 12 - 14 - 12 - 14 - 34 - 14:Oxford Treble Bob Minimus
+- 34 - 14 - 12 - 14 12 - 34 14 34 - 12 14 - 12 - 14 - 34 - 14:Glarsgow Alliance Minimus
+- 34 - 14 - 12 - 34 - 12 - 14 - 34 - 12:Tarrant Treble Bob Minimus
+- 34 - 14 - 12 - 34 - 14 - 14 - 14 - 34 - 12 - 14 - 34 - 12:Ipswich Treble Place Minimus
+- 34 - 14 - 12 - 34 - 34 - 14 - 34 - 34 - 12 - 14 - 34 - 14:Norwich Alliance Minimus
+- 34 - 14 - 12 - 34 12 - 14 14 14 - 12 34 - 12 - 14 - 34 - 14:Llonndonn Alliance Minimus
+- 34 - 14 - 12 - 34 14 - 12 34 12 - 14 34 - 12 - 14 - 34 - 14:Warkworth Alliance Minimus
+- 34 - 14 - 12 12 14 12 12 - 14 - 34 - 12:Oakford Lane Treble Bob Minimus
+- 34 - 14 - 12 12 14 12 12 - 14 - 34 - 14:Oakford Lane Treble Bob Minimus
+- 34 - 14 - 12 12 34 12 12 - 14 - 34 - 12:Donhead Treble Bob Minimus
+- 34 - 14 - 12 14 12 - 12 14 12 - 14 - 34 - 14:Neelix Minimus
+- 34 - 14 - 12 14 34 - 34 14 12 - 14 - 34 - 14:Talaxian Minimus
+- 34 - 14 - 14 - 12 - 14 12 - 14 - 14 12 34 14:Grandma Tracy Minimus
+- 34 - 14 - 14 - 12 - 14 12 - 14 - 14 34 12 14:Professor Popkiss Minimus
+- 34 - 14 - 14 - 12 - 14 34 14 - 14 12 - 12 14:Parker Minimus
+- 34 - 14 - 14 - 14 - 34 - 12:Reverse Colton Alliance Minimus
+- 34 - 14 - 14 - 14 - 34 - 14:Reverse Sparsholt Alliance Minimus
+- 34 - 14 - 14 - 34 - 14 - 14 - 34 - 14:Cold Ashby Treble Place Minimus
+- 34 - 14 - 14 12 - 12 14 - 34 - 14 34 - 34 14 - 14 12 - 12 34:Station Man Minimus
+- 34 - 14 - 14 12 34 12 14 - 14 - 34 - 14:Yuma Treble Place Minimus
+- 34 - 14 - 14 34 - 34 14 - 12 - 14 12 - 12 14 - 14 12 - 12 34:Blind As A Bat Minimus
+- 34 - 14 - 14 34 - 34 14 - 34 - 14 12 - 12 14 - 14 12 - 12 34:Hold Me Minimus
+- 34 - 14 - 34 - 14 - 34 - 12:Reverse Allexton Alliance Minimus
+- 34 - 14 - 34 - 14 12 14 34 - 34 14 - 34 - 14:Admiral Denver Minimus
+- 34 - 14 - 34 - 34 - 34 - 14 - 34 - 12:Melchbourne Treble Place Minimus
+- 34 - 14 - 34 12 34 12 34 - 14 - 34 - 12:Thorpe Achurch Treble Place Minimus
+- 34 - 14 - 34 14 12 - 12 14 34 - 14 - 34 - 14:Tuvok Minimus
+- 34 - 14 - 34 14 34 - 34 14 34 - 14 - 34 - 14:Vulcan Minimus
+- 34 - 14 12 - - 14 - - 12 14 - 34 - 14:Trotton Treble Bob Minimus
+- 34 - 14 12 - - 34 - - 12 14 - 34 - 12:Reverse Briefcase and Mobile Phone Treble Bob Minimus
+- 34 - 14 12 - 12 14 12 - 12 14 - 34 - 12:Crawford Treble Bob Minimus
+- 34 - 14 12 - 12 14 12 - 12 14 - 34 - 14:Crawford Treble Bob Minimus
+- 34 - 14 12 - 12 14 34 14 34 12:Mourhino Minimus
+- 34 - 14 12 - 12 34 12 - 12 14 - 34 - 12:Reverse Keyneston Treble Bob Minimus
+- 34 - 14 12 - 14 12 - 12 14 - 12 14 - 34 - 14:James T Kirk Minimus
+- 34 - 14 12 - 14 34 - 34 14 - 12 14 - 34 - 14:Spock Minimus
+- 34 - 14 12 12 - 14 - 12 12 14 - 34 - 12:Ramsbottom Treble Bob Minimus
+- 34 - 14 12 12 - 14 - 12 12 14 - 34 - 14:Ramsbottom Treble Bob Minimus
+- 34 - 14 12 12 - 34 - 12 12 14 - 34 - 12:Reverse Torbryan Treble Bob Minimus
+- 34 - 14 12 12 12 14 12 12 12 14 - 34 - 14:Cann Treble Bob Minimus
+- 34 - 14 12 12 12 34 12 12 12 14 - 34 - 12:Reverse Kermit Treble Bob Minimus
+- 34 - 14 12 14 - 34 - 14 12 14 - 34 - 12:Sugwas Pool Treble Place Minimus
+- 34 - 14 12 14 - 34 - 14 12 14 - 34 - 14:Kingman Treble Place Minimus
+- 34 - 14 12 14 12 14 - 34 - 14:Reverse Lyndon Alliance Minimus
+- 34 - 14 12 14 12 34 12 14 12 14 - 34 - 12:Lulham Treble Place Minimus
+- 34 - 14 12 14 12 34 12 14 12 14 - 34 - 14:Buckeye Treble Place Minimus
+- 34 - 14 12 34 - 34 - 34 12 14 - 34 - 12:Pilton Treble Place Minimus
+- 34 - 14 12 34 12 14 - 34 - 12:Reverse Sibson Alliance Minimus
+- 34 - 14 12 34 12 34 12 34 12 14 - 34 - 12:Lutton Treble Place Minimus
+- 34 - 14 34 - 14 12 - 12 14 - 34 14 - 34 - 14:Sulu Minimus
+- 34 - 14 34 - 14 14 14 - 34 14 - 34 - 14:Prévy Treble Place Minimus
+- 34 - 14 34 - 14 34 - 34 14 - 34 14 - 34 - 14:Uhura Minimus
+- 34 - 14 34 - 14 34 14 - 34 14 - 34 - 12:Falcon Treble Place Minimus
+- 34 - 14 34 - 14 34 14 - 34 14 - 34 - 14:Collonges Treble Place Minimus
+- 34 - 14 34 - 34 14 34 - 34 14 - 34 - 12:Sandpiper Treble Place Minimus
+- 34 - 14 34 - 34 14 34 - 34 14 - 34 - 14:Chevrier Treble Place Minimus
+- 34 - 14 34 - 34 14 34 14 34 12:Dreams Minimus
+- 34 - 14 34 - 34 34 34 - 34 14 - 34 - 12:Chêne-en-Semine Treble Place Minimus
+- 34 - 14 34 12 34 34 34 12 34 14 - 34 - 12:Fruitière Treble Place Minimus
+- 34 - 34 - 14 - - - - - 14 - - - - - 14 - 34 - 34 - 12:Lucy Cavendish College Treble Bob Minimus
+- 34 - 34 - 14 - - - - - 34 - - - - - 14 - 34 - 34 - 12:West Hanningfield Treble Bob Minimus
+- 34 - 34 - 14 - - - - - 34 - - - - - 14 - 34 - 34 - 14:Hughes Hall Treble Bob Minimus
+- 34 - 34 - 14 - - - 12 - 14 - 12 - - - 14 - 34 - 34 - 14:Fitzwilliam College Treble Bob Minimus
+- 34 - 34 - 14 - - - 12 - 34 - 12 - - - 14 - 34 - 34 - 12:Stambridge Treble Bob Minimus
+- 34 - 34 - 14 - - - 12 - 34 - 12 - - - 14 - 34 - 34 - 14:Churchill College Treble Bob Minimus
+- 34 - 34 - 14 - - 12 - 12 14 - 14 - 12:Bruach na Frithe Minimus
+- 34 - 34 - 14 - - 12 - 12 34 - 14 - 12:Am Faochagach Minimus
+- 34 - 34 - 14 - - 12 - 12 34 - 14 - 14:A' Mhaighdean Minimus
+- 34 - 34 - 14 - - 12 - 12 34 12 - 12 - - 14 - 34 - 34 - 12:East Hardon Treble Bob Minimus
+- 34 - 34 - 14 - 12 - - - 14 - - - 12 - 14 - 34 - 34 - 14:Downing College Treble Bob Minimus
+- 34 - 34 - 14 - 12 - - - 34 - - - 12 - 14 - 34 - 34 - 14:Emmanuel College Treble Bob Minimus
+- 34 - 34 - 14 - 12 - 12 - 14 - 12 - 12 - 14 - 34 - 34 - 12:Smiffey Treble Bob Minimus
+- 34 - 34 - 14 - 12 - 12 - 14 - 14 - 12:Meall Glas Minimus
+- 34 - 34 - 14 - 12 - 12 - 34 - 12 - 12 - 14 - 34 - 34 - 12:Sidney Sussex College Treble Bob Minimus
+- 34 - 34 - 14 - 12 - 12 - 34 - 12 - 12 - 14 - 34 - 34 - 14:Corpus Christi College Treble Bob Minimus
+- 34 - 34 - 14 - 12 - 12 - 34 - 14 - 12:Sgor Gaibhre Minimus
+- 34 - 34 - 14 - 12 - 12 - 34 - 14 - 14:Meall Garbh Minimus
+- 34 - 34 - 14 - 14 - - 12 - 12 14 - 12:Tom na Gruagaich Minimus
+- 34 - 34 - 14 - 14 - 12 - 12 - 14 - 12:Sgurr nan Each Minimus
+- 34 - 34 - 14 - 14 - 34 - 34 - 14 - 12:Meall Greigh Minimus
+- 34 - 34 - 14 - 14 - 34 12 34 12 14 - 12:Beinn Bheoil Minimus
+- 34 - 34 - 14 - 14 12 - 12 - - 14 - 12:An Coileachan Minimus
+- 34 - 34 - 14 - 14 12 34 12 34 - 14 - 12:An Sgarsoch Minimus
+- 34 - 34 - 14 - 34 - - 12 - 12 14 - 12:Carn Aosda Minimus
+- 34 - 34 - 14 - 34 - - 12 - 12 14 - 14:Beinn Liath Mhor Minimus
+- 34 - 34 - 14 - 34 - 12 - 12 - 14 - 12:Sgurr a'Mhadaidh Minimus
+- 34 - 34 - 14 - 34 - 12 - 12 - 14 - 14:Moruisg Minimus
+- 34 - 34 - 14 - 34 - 34 - 34 - 14 - 12:Sail Chaorainn Minimus
+- 34 - 34 - 14 - 34 - 34 - 34 - 14 - 14:Beinn an Dothaidh Minimus
+- 34 - 34 - 14 - 34 - 34 - 34 - 34 - 34 - 14 - 34 - 34 - 12:Zythum Treble Place Minimus
+- 34 - 34 - 14 - 34 - 34 12 34 12 14 - 12:Mullach an Rathain Minimus
+- 34 - 34 - 14 - 34 - 34 12 34 12 14 - 14:Carn Gorm Minimus
+- 34 - 34 - 14 - 34 12 - 12 - - 14 - 12:Meall na Teanga Minimus
+- 34 - 34 - 14 - 34 12 - 12 - - 14 - 14:Mayar Minimus
+- 34 - 34 - 14 - 34 12 34 12 34 - 14 - 12:Sgurr an Doire Leathain Minimus
+- 34 - 34 - 14 - 34 12 34 12 34 - 14 - 14:Garbh Chioch Mhor Minimus
+- 34 - 34 - 14 12 - 12 - - 14 - 14 - 12:Beinn Fhionnlaidh Minimus
+- 34 - 34 - 14 12 - 12 - - 34 - 14 - 12:Stob na Broige Minimus
+- 34 - 34 - 14 12 - 12 - - 34 - 14 - 14:Sgurr a'Ghreadaidh Minimus
+- 34 - 34 - 14 12 - 12 - 12 14 12 14 - 14:Ben Avon Minimus
+- 34 - 34 - 14 12 - 12 - 12 34 12 14 - 12:Ben Lawers Minimus
+- 34 - 34 - 14 12 - 12 - 12 34 12 14 - 14:Mam Sodhail Minimus
+- 34 - 34 - 14 12 14 12 - 12 - 12 14 - 14:An Stuc Minimus
+- 34 - 34 - 14 12 14 12 34 12 34 12 14 - 14:Bynack More Minimus
+- 34 - 34 - 14 12 34 12 - 12 - 12 14 - 12:Cairn Gorm Minimus
+- 34 - 34 - 14 12 34 12 - 12 - 12 14 - 14:Sgurr nan Ceathreamhnan Minimus
+- 34 - 34 - 14 12 34 12 34 12 34 12 14 - 12:Sgor Gaoith Minimus
+- 34 - 34 - 14 12 34 12 34 12 34 12 14 - 14:Tom a'Choinich Minimus
+- 34 - 34 - 34 - 14 - 12 - 12 - 12 - 14 - 12 - 12 - 12 - 14 - 34 - 34 - 34 - 14:I Can't Believe It's Not Bolux Triple Treble Bob Minimus
+- 34 14:Ermin Little Alliance Minimus
+- 34 14 - 12 - 14 12 - 12 14 - 12 - 14 34 - 12:Jean-Luc Pickard Minimus
+- 34 14 - 12 - 14 12 - 12 14 - 12 - 14 34 - 34:Ferengi Minimus
+- 34 14 - 12 - 14 34 - 34 14 - 12 - 14 34 - 12:Riker Minimus
+- 34 14 - 12 - 14 34 - 34 14 - 12 - 14 34 - 34:Cardassian Minimus
+- 34 14 - 14 - 14 34 - 14 12 14 - 14 - 34 - 14:WASP Minimus
+- 34 14 - 34 - 14 12 - 12 14 - 34 - 14 34 - 12:Worf Minimus
+- 34 14 - 34 - 14 12 - 12 14 - 34 - 14 34 - 34:Borg Minimus
+- 34 14 - 34 - 14 34 - 34 14 - 34 - 14 34 - 12:Data Minimus
+- 34 14 - 34 - 14 34 - 34 14 - 34 - 14 34 - 34:Q Minimus
+- 34 14 34 14 34:Erin Minimus
+- 34 34 14 - - - 14 - - - 14 34 34 - 12:Ashley Treble Bob Minimus
+- 34 34 14 - - - 34 - - - 14 34 34 - 12:Denchworth Treble Bob Minimus
+- 34 34 14 - - - 34 - - - 14 34 34 - 14:Reverse Newtown Treble Bob Minimus
+- 34 34 14 - - 12 14 12 - - 14 34 34 - 14:Reverse Hinton Treble Bob Minimus
+- 34 34 14 - - 12 34 12 - - 14 34 34 - 12:Fritwell Treble Bob Minimus
+- 34 34 14 - - 12 34 12 - - 14 34 34 - 14:Reverse Monkswood Reservoir Treble Bob Minimus
+- 34 34 14 - 12 - 14 - 12 - 14 34 34 - 14:Reverse Margaret Marsh Treble Bob Minimus
+- 34 34 14 - 12 - 34 - 12 - 14 34 34 - 12:Torbryan Treble Bob Minimus
+- 34 34 14 - 12 - 34 - 12 - 14 34 34 - 14:Reverse Ramsbottom Treble Bob Minimus
+- 34 34 14 - 12 12 14 12 12 - 14 34 34 - 12:Marshfield Treble Bob Minimus
+- 34 34 14 - 12 12 34 12 12 - 14 34 34 - 12:Shipton Gorge Treble Bob Minimus
+- 34 34 14 - 12 12 34 12 12 - 14 34 34 - 14:Reverse Fosse Lane Treble Bob Minimus
+- 34 34 14 - 14 - 14 34 34 - 12:Reverse Bobbington Alliance Minimus
+- 34 34 14 - 14 - 34 - 14 - 14 34 34 - 14:Lyonshall Treble Place Minimus
+- 34 34 14 - 14 12 34 12 14 - 14 34 34 - 14:Moorcot Treble Place Minimus
+- 34 34 14 - 34 - 14 34 34 - 12:Reverse Cubley Alliance Minimus
+- 34 34 14 - 34 - 14 34 34 - 14:Reverse Tamale Alliance Minimus
+- 34 34 14 - 34 - 34 - 34 - 14 34 34 - 12:Pima Treble Place Minimus
+- 34 34 14 - 34 - 34 - 34 - 14 34 34 - 14:Mesa Treble Place Minimus
+- 34 34 14 - 34 12 34 12 34 - 14 34 34 - 12:Parker Treble Place Minimus
+- 34 34 14 - 34 12 34 12 34 - 14 34 34 - 14:Casa Grande Treble Place Minimus
+- 34 34 14 12 - - 14 - - 12 14 34 34 - 14:Reverse Breamore Treble Bob Minimus
+- 34 34 14 12 - - 34 - - 12 14 34 34 - 12:Buscot Treble Bob Minimus
+- 34 34 14 12 - - 34 - - 12 14 34 34 - 14:Buscot Treble Bob Minimus
+- 34 34 14 12 - 12 14 12 - 12 14 34 34 - 12:Steway Lane Treble Bob Minimus
+- 34 34 14 12 - 12 34 12 - 12 14 34 34 - 12:Yatton Keynell Treble Bob Minimus
+- 34 34 14 12 - 12 34 12 - 12 14 34 34 - 14:Reverse Sham Castle Treble Bob Minimus
+- 34 34 14 12 12 - 14 - 12 12 14 34 34 - 12:Ashwicke Treble Bob Minimus
+- 34 34 14 12 12 - 34 - 12 12 14 34 34 - 12:Towersey Treble Bob Minimus
+- 34 34 14 12 12 - 34 - 12 12 14 34 34 - 14:Reverse Ashwicke Treble Bob Minimus
+- 34 34 14 12 12 12 14 12 12 12 14 34 34 - 14:Reverse Langley Treble Bob Minimus
+- 34 34 14 12 12 12 34 12 12 12 14 34 34 - 12:Halton Treble Bob Minimus
+- 34 34 14 12 12 12 34 12 12 12 14 34 34 - 14:Reverse Brimpton Treble Bob Minimus
+- 34 34 14 12 14 12 14 34 34 - 14:Reverse Phantom F4 Alliance Minimus
+- 34 34 14 12 34 - 34 - 34 12 14 34 34 - 12:Tubac Treble Place Minimus
+- 34 34 14 12 34 - 34 - 34 12 14 34 34 - 14:Snowflake Treble Place Minimus
+- 34 34 14 12 34 12 14 34 34 - 12:Reverse Carlton-by-Bosworth Alliance Minimus
+- 34 34 14 12 34 12 14 34 34 - 14:Reverse Taco Alliance Minimus
+- 34 34 14 12 34 12 34 12 34 12 14 34 34 - 12:Lake Havasu City Treble Place Minimus
+- 34 34 14 12 34 12 34 12 34 12 14 34 34 - 14:Maricopa Treble Place Minimus
+- 34 34 14 34 - 14 14 14 - 34 14 34 34 - 14:Peewit Treble Place Minimus
+- 34 34 14 34 - 14 34 14 - 34 14 34 34 - 12:Finch Treble Place Minimus
+- 34 34 14 34 - 34 14 34 - 34 14 34 34 - 12:Waxwing Treble Place Minimus
+- 34 34 14 34 - 34 34 34 - 34 14 34 34 - 12:Challonges Treble Place Minimus
+- 34 34 14 34 - 34 34 34 - 34 14 34 34 - 14:Seyssel Treble Place Minimus
+- 34 34 14 34 12 14 14 14 12 34 14 34 34 - 12:Goose Treble Place Minimus
+- 34 34 14 34 12 34 14 34 12 34 14 34 34 - 14:Moorhen Treble Place Minimus
+- 34 34 14 34 12 34 34 34 12 34 14 34 34 - 12:Usinens Treble Place Minimus
+12 - 12 14:Reverse Finchampstead Minimus
+12 - 12 14 - - - 14 - - - 14 12 - 12 12:Questo Primo Treble Place Minimus
+12 - 12 14 - - - 34 - - - 14 12 - 12 12:Secondo Treble Place Minimus
+12 - 12 14 - - 12 14 12 - - 14 12 - 12 14:Reverse Chancy Treble Place Minimus
+12 - 12 14 - - 12 34 12 - - 14 12 - 12 12:Reverse Arcine Treble Place Minimus
+12 - 12 14 - 12 - 14 - 12 - 14 12 - 12 14:Reverse Chevrier Treble Place Minimus
+12 - 12 14 - 12 - 34 - 12 - 14 12 - 12 12:Reverse Chêne-en-Semine Treble Place Minimus
+12 - 12 14 - 12 12 14 12 12 - 14 12 - 12 12:Reverse Crempigny Treble Place Minimus
+12 - 12 14 - 12 12 34 12 12 - 14 12 - 12 12:Reverse Bassy Treble Place Minimus
+12 - 12 14 - 14 12 - 12 14 - 12 - 14 12 - 12 14 - 14 12 - 12 -:The Dark Side Of The Moon Minimus
+12 - 12 14 - 14 12 - 12 14 - 12 - 14 34 - 34 14 - 14 - 34 - 34:Don't Stop Minimus
+12 - 12 14 - 14 12 - 12 14 - 34 - 14 12 - 12 14 - 14 12 - 12 -:Wish You Were Here Minimus
+12 - 12 14 - 14 12 - 12 14 34 14:Gertrude Minimus
+12 - 12 14 - 14 34 - 34 14 34 14:Ma Minimus
+12 - 12 14 - 34 - 14 12 - 12 12:Reverse Quesadilla Alliance Minimus
+12 - 12 14 - 34 - 34 - 34 - 14 12 - 12 12:Nova Treble Place Minimus
+12 - 12 14 12 - - 14 - - 12 14 12 - 12 14:Reverse La Joux Treble Place Minimus
+12 - 12 14 12 - - 34 - - 12 14 12 - 12 12:Reverse Clarafond Treble Place Minimus
+12 - 12 14 12 - 12 14 12 - 12 14 12 - 12 12:Reverse Clermont Treble Place Minimus
+12 - 12 14 12 - 12 34 12 - 12 14 12 - 12 12:Reverse Vanzy Treble Place Minimus
+12 - 12 14 12 12 - 14 - 12 12 14 12 - 12 12:Reverse Seyssel Treble Place Minimus
+12 - 12 14 12 12 - 34 - 12 12 14 12 - 12 12:Reverse Challonges Treble Place Minimus
+12 - 12 14 12 12 12 34 12 12 12 14 12 - 12 12:Reverse Beauchâtel Treble Place Minimus
+12 - 12 14 12 14 12 - 12 14 - 14:Ada Minimus
+12 - 12 14 12 14 34 - 34 14 - 14:Ethel Minimus
+12 - 12 14 34 - 14 14 14 - 34 14 12 - 12 14:Cassiopeia Treble Place Minimus
+12 - 12 14 34 - 34 14 - 12 14 34:Five-Six Minimus
+12 - 12 14 34 - 34 14 34 - 34 14 12 - 12 12:Covid Lockdown Treble Place Minimus
+12 - 12 14 34 - 34 34 34 - 34 14 12 - 12 12:X-Border Treble Place Minimus
+12 - 12 14 34 12 14 14 14 12 34 14 12 - 12 12:Orion Treble Place Minimus
+12 - 12 14 34 12 34 34 34 12 34 14 12 - 12 12:Eider Treble Place Minimus
+12 - 12 14 34 14:Reverse Stanton Minimus
+12 - 14 - 12 - 14 12 - 12 14 - 12 - 14 - 12 34:Enterprise Minimus
+12 - 14 - 12 - 14 34 - 34 14 - 12 - 14 - 12 34:Intrepid Minimus
+12 - 14 - 34 - 14 12 - 12 14 - 34 - 14 - 12 34:Voyager Minimus
+12 - 14 - 34 - 14 34 - 34 14 - 34 - 14 - 12 34:Excelsior Minimus
+12 - 14 12 - 12 14 12 14 12 34 -:Sharp Dressed Man Minimus
+12 - 14 34 - 34 14 12 14 12 34 -:Zur Elektrodynamik bewegter Körper Minimus
+12 14 - 12 - 14 - 34 - 14 12 - 12 14 - 34 - 14 - 12 - 14 12 -:Dockyard Minimus
+12 14 - 14 12 - 12 14 - 14 12 14:The Piper At The Gates Of Dawn Minimus
+12 14 - 14 34 14 12 14 - 14 12 14:Ayston Minimus
+12 14 - 14 34 14 12 14 - 14 34 34 34 14 - 14 12 14 34 14 - 14 12 12:Double Crunch Treble Place Minimus
+12 14 - 14 34 14 12 14 - 14 34 34 34 14 - 14 12 14 34 14 - 14 12 14:Oh Henry! Treble Place Minimus
+12 14 - 14 34 14 12 14 - 34 14 34 14 34 - 14 12 14 34 14 - 14 12 14:Topic Treble Place Minimus
+12 14 - 14 34 14 12 14 12 34 14 34 14 34 12 14 12 14 34 14 - 14 12 14:Crunchy Nut Treble Place Minimus
+12 14 - 14 34 14 34 14 - 14 34 14:Tinwell Minimus
+12 14 12 14 12 - 12 14 - 12 - 34:XXX Minimus
+12 14 12 14 34 - 34 14 - 12 - 34:By Strength And Guile Minimus
+12 14 12 14 34 14 12 14 12 14 34 -:Afterburner Minimus
+12 14 12 14 34 14 12 14 34 14 34 -:Black Magic Woman Minimus
+12 14 12 14 34 14 34 14 12 14 34 14:Lyndon Minimus
+12 14 34:Llanarthne Minimus
+12 14 34 - 14 12 - 12 14 34 - 34:Six-Five Minimus
+12 14 34 - 14 34 - 34 14 34 - 34:Rhythmeen Minimus
+12 14 34 12 34 14 12 34 12 14 34 -:Sands Of Time Minimus
+12 14 34 14:Double Trouble Little Place Minimus
+12 14 34 14 - 12 - 14 12 14 34 -:Little Lies Minimus
+12 14 34 14 - 34 - 14 12 14 12 34 12 14 12 14 - 34 - 14 34 14 12 14:Shipping Container Treble Place Minimus
+12 14 34 14 - 34 - 14 12 14 34 -:Fandango! Minimus
+12 14 34 14 12 14 34 14 34 14 12 14:Baines Johnson Minimus
+12 14 34 14 34 14 12 14 12 14 34 -:The Endless River Minimus
+12 14 34 14 34 14 12 14 34 14 34 -:Recycler Minimus
+12 34:Llanarthne II Minimus
+12 34 12 14 - - - 34 - - - 14 12 34 12 12:Reverse Éloise Treble Place Minimus
+12 34 12 14 - - 12 14 12 - - 14 12 34 12 14:Reverse Vulbens Treble Place Minimus
+12 34 12 14 - - 12 34 12 - - 14 12 34 12 12:Reverse Chessenaz Treble Place Minimus
+12 34 12 14 - 12 - 14 12 34 12 -:More Minimus
+12 34 12 14 - 12 - 34 - 12 - 14 12 34 12 12:Reverse Fruitière Treble Place Minimus
+12 34 12 14 - 12 12 14 12 12 - 14 12 34 12 12:Reverse Droisy Treble Place Minimus
+12 34 12 14 - 12 12 34 12 12 - 14 12 34 12 12:Reverse Designy Treble Place Minimus
+12 34 12 14 - 34 - 14 12 34 12 -:Atom Heart Mother Minimus
+12 34 12 14 12 - - 14 - - 12 14 12 34 12 14:Reverse Valleiry Treble Place Minimus
+12 34 12 14 12 - - 34 - - 12 14 12 34 12 12:Reverse Franclens Treble Place Minimus
+12 34 12 14 12 - 12 14 12 - 12 14 12 34 12 12:Reverse Bonneguête Treble Place Minimus
+12 34 12 14 12 12 - 34 - 12 12 14 12 34 12 12:Reverse Usinens Treble Place Minimus
+12 34 12 14 12 12 12 34 12 12 12 14 12 34 12 12:Reverse Traînant Treble Place Minimus
+12 34 12 14 34 - 14 34 14 - 34 14 12 34 12 12:Pleiades Treble Place Minimus
+12 34 12 14 34 - 34 34 34 - 34 14 12 34 12 12:Gull Treble Place Minimus
+12 34 12 14 34 12 34 34 34 12 34 14 12 34 12 12:Pintail Treble Place Minimus
+12 34 14 12 - 12 14 12 34 12 14 34:Tres Hombres Minimus
+12 34 14 34 12 14:Mr Wood's Double Minimus
+14 - 12 14 - - 12 14 12 - - 14 12 - 14 12:Reverse Vovray Treble Place Minimus
+14 - 12 14 - - 12 14 12 - - 14 12 - 14 14:Reverse Chamoux Treble Place Minimus
+14 - 12 14 - 12 - 14 - 12 - 14 12 - 14 12:Reverse Collonges Treble Place Minimus
+14 - 12 14 - 12 - 14 - 12 - 14 12 - 14 14:Reverse Prévy Treble Place Minimus
+14 - 12 14 12 - - 14 - - 12 14 12 - 14 12:Reverse Chaumont Treble Place Minimus
+14 - 12 14 12 - - 14 - - 12 14 12 - 14 14:Reverse Le Crêt Treble Place Minimus
+14 - 12 14 34 12 34 14 34 12 34 14 12 - 14 12:Ursa Major Treble Place Minimus
+14 - 14 - 12 - 14 - 12 - 14 - 14 - 14 - 34 - 14 12 - 14 - 12:The Chain Minimus
+14 - 14 - 34 - 14 - 34 - 14 - 14 - 14 - 12 - 14 34 - 14 - 34:I'd Do Anything For Love Minimus
+14 - 14 12 - 12 14 - 14 12 - 14 - 12 14 - 14 12 - 12 14 - 14 -:A Momentary Lapse Of Reason Minimus
+14 - 14 34 - 34 14 - 14 34 - 14 - 34 14 - 14 34 - 34 14 - 14 -:The Division Bell Minimus
+14 - 14 34 - 34 14 12 14 12 - 12:Audrey Minimus
+14 - 34 14 34 - 14 34:Boatman's Minimus
+14 12:Cheeky Little Place Minimus
+14 12 - 14 34 14 12 14 - 14 34 14 34 14 - 14 12 14 34 14 - 12 14 12:Marathon Treble Place Minimus
+14 12 - 14 34 14 12 14 - 14 34 14 34 14 - 14 12 14 34 14 - 12 14 14:Snickers Treble Place Minimus
+14 12 - 14 34 14 12 14 - 34 14 34 14 34 - 14 12 14 34 14 - 12 14 12:Mr Goodbar Treble Place Minimus
+14 12 34 12 14 34 12 34 14 12 - 34:Silver Springs Minimus
+14 12 34 12 14 34 12 34 14 34 - 12:All Revved Up With No Place To Go Minimus
+14 12 34 14 34 14 12 14 - 14 34 14 34 14 - 14 12 14 34 14 34 12 14 12:Nutty Crunch Treble Place Minimus
+14 12 34 14 34 14 12 14 12 34 14 34 14 34 12 14 12 14 34 14 34 12 14 12:Double Nut Treble Place Minimus
+14 34:Itram Little Place Minimus
+14 34 - 14 - 34 14 34:New Boatman's Minimus
+14 34 - 34 14 - 14 34 - 34 14 12:Uluru Minimus
+14 34 - 34 14 12 14 12 - 12 14 12:Daisy Minimus
+14 34 12 14 - - 12 14 12 - - 14 12 34 14 12:Reverse Loblaz Treble Place Minimus
+14 34 12 14 - - 12 14 12 - - 14 12 34 14 14:Reverse Les Baraques Treble Place Minimus
+14 34 12 14 12 - - 14 - - 12 14 12 34 14 12:Reverse Le Malpas Treble Place Minimus
+14 34 12 14 12 - - 14 - - 12 14 12 34 14 14:Reverse Épanezey Treble Place Minimus
+14 34 12 14 34 12 14 34 14 12 34 14 12 34 14 12:Bootes Treble Place Minimus
+14 34 12 14 34 12 34 14 34 12 34 14 12 34 14 14:Don't Leave Your Handbells on The Train Treble Place Minimus
+14 34 14 34 - 34 14 - 14 12 - 12:Elsie Mary Minimus
+14 34 14 34 12:Rural Minimus
+34 - - 14 - - - 14 - - - 14 - - 34 12:Easter Treble Bob Minimus
+34 - - 14 - - - 14 - - - 14 - - 34 14:Easter Treble Bob Minimus
+34 - - 14 - - - 34 - - - 14 - - 34 12:Remembrance Day Treble Bob Minimus
+34 - - 14 - - 12 14 12 - - 14 - - 34 14:Langton Long Treble Bob Minimus
+34 - - 14 - - 12 34 12 - - 14 - - 34 12:Poppy Treble Bob Minimus
+34 - - 14 - 12 - 14 - 12 - 14 - - 34 14:Malcolm Treble Bob Minimus
+34 - - 14 - 12 - 34 - 12 - 14 - - 34 12:For the Fallen Treble Bob Minimus
+34 - - 14 - 12 - 34 12 - 14 34 14 - 12 34 12 - 14 34 14 - 12 34 - 12 - 14 - - 34 14:Demi-Belfast Alliance Minimus
+34 - - 14 - 12 12 14 12 12 - 14 - - 34 12:Hollies Lane Treble Bob Minimus
+34 - - 14 - 12 12 14 12 12 - 14 - - 34 14:Vindaloo Treble Bob Minimus
+34 - - 14 - 12 12 34 12 12 - 14 - - 34 12:Last Post Treble Bob Minimus
+34 - - 14 - 14 - 14 - - 34 12:Reverse Denstone Alliance Minimus
+34 - - 14 - 14 - 14 - - 34 14:Reverse Stoughton Alliance Minimus
+34 - - 14 - 14 - 34 - 14 - 14 - - 34 14:Flagstaff Treble Place Minimus
+34 - - 14 - 14 12 34 12 14 - 14 - - 34 14:Gila Bend Treble Place Minimus
+34 - - 14 - 34 - 14 - - 34 12:Reverse Orton-on-the-Hill Alliance Minimus
+34 - - 14 - 34 - 34 - 34 - 14 - - 34 12:Kilsby Treble Place Minimus
+34 - - 14 12 - - 14 - - 12 14 - - 34 14:The Paddocks Treble Bob Minimus
+34 - - 14 12 - - 34 - - 12 14 - - 34 12:Reveller Treble Bob Minimus
+34 - - 14 12 - 12 14 12 - 12 14 - - 34 12:Northend Treble Bob Minimus
+34 - - 14 12 - 12 14 12 - 12 14 - - 34 14:Reverse Chaddleworth Treble Bob Minimus
+34 - - 14 12 - 12 34 12 - 12 14 - - 34 12:Ettington Treble Bob Minimus
+34 - - 14 12 12 - 14 - 12 12 14 - - 34 12:Monkswood Reservoir Treble Bob Minimus
+34 - - 14 12 12 - 14 - 12 12 14 - - 34 14:Monkswood Reservoir Treble Bob Minimus
+34 - - 14 12 12 - 34 - 12 12 14 - - 34 12:Reverse Fritwell Treble Bob Minimus
+34 - - 14 12 12 12 14 12 12 12 14 - - 34 14:96 Treble Bob Minimus
+34 - - 14 12 12 12 34 12 12 12 14 - - 34 12:Truffler Treble Bob Minimus
+34 - - 14 12 14 - 34 - 14 12 14 - - 34 12:Moorhampton Treble Place Minimus
+34 - - 14 12 14 - 34 - 14 12 14 - - 34 14:Cottonwood Treble Place Minimus
+34 - - 14 12 14 12 14 - - 34 14:Reverse Ayston Alliance Minimus
+34 - - 14 12 14 12 34 12 14 12 14 - - 34 12:Mansell Gamage Treble Place Minimus
+34 - - 14 12 14 12 34 12 14 12 14 - - 34 14:Nogales Treble Place Minimus
+34 - - 14 12 34 12 14 - - 34 12:Reverse Pickwell Alliance Minimus
+34 - - 14 12 34 12 34 12 34 12 14 - - 34 12:Sierra Vista Treble Place Minimus
+34 - - 14 34 - 14 14 14 - 34 14 - - 34 14:Chamoux Treble Place Minimus
+34 - - 14 34 - 14 34 14 - 34 14 - - 34 12:Bittern Treble Place Minimus
+34 - - 14 34 - 14 34 14 - 34 14 - - 34 14:Vovray Treble Place Minimus
+34 - - 14 34 - 34 14 34 - 34 14 - - 34 12:Curlew Treble Place Minimus
+34 - - 14 34 - 34 14 34 - 34 14 - - 34 14:Chancy Treble Place Minimus
+34 - - 14 34 - 34 34 34 - 34 14 - - 34 12:Arcine Treble Place Minimus
+34 - - 14 34 12 14 14 14 12 34 14 - - 34 14:Les Baraques Treble Place Minimus
+34 - - 14 34 12 14 34 14 12 34 14 - - 34 14:Loblaz Treble Place Minimus
+34 - - 14 34 12 34 14 34 12 34 14 - - 34 14:Vulbens Treble Place Minimus
+34 - - 14 34 12 34 34 34 12 34 14 - - 34 12:Chessenaz Treble Place Minimus
+34 - 14:Fosse Little Alliance Minimus
+34 - 14 - 12 - 14 12 - 12 14 - 12 - 14 - 34 12:La Forge Minimus
+34 - 14 - 12 - 14 34 - 34 14 - 12 - 14 - 34 12:Yar Minimus
+34 - 14 - 14 - 12 - 14 34 - 14 - 14 12 34 14 -:Professor Matic Minimus
+34 - 14 - 34 - 14 - 34 14 - 14 34 - 14 12 - 12:John Tracy Minimus
+34 - 14 - 34 - 14 12 - 12 14 - 34 - 14 - 34 12:Crusher Minimus
+34 - 14 - 34 - 14 12 14 34 - 34 14 - 12 - 14 -:Commander Shore Minimus
+34 - 14 - 34 - 14 34 - 14 - 14 - 34 14 12 - 12:Commander Zero Minimus
+34 - 14 - 34 - 14 34 - 34 14 - 34 - 14 - 34 12:Troi Minimus
+34 - 14 - 34 14 - 12 14 - 14 12 - 14 - 12 - 12:Gordon Tracy Minimus
+34 - 14 - 34 14 - 12 14 - 14 12 - 14 34 - 34 -:Rhapsody Angel Minimus
+34 - 14 - 34 14 - 12 14 - 14 12 - 14 34 12 34 12:Symphony Angel Minimus
+34 - 14 - 34 14 12 - 14 - 14 - 12 14 - 12 - 12:Aphony Minimus
+34 - 14 - 34 14 12 - 14 - 14 - 12 14 34 - 34 -:Jimmy Gibson Minimus
+34 - 14 - 34 14 12 - 14 - 14 - 12 14 34 12 34 12:Mitch Minimus
+34 - 34 - - 14 - - 12 - 12 14 - 14 - 12:Stuchd an Lochain Minimus
+34 - 34 - - 14 - - 12 - 12 34 - 14 - 12:Stob Dubh Minimus
+34 - 34 - - 14 - - 12 - 12 34 - 14 - 14:Beinn Sgritheall Minimus
+34 - 34 - - 14 - 12 - 12 - 14 - 14 - 12:Beinn nan Aighenan Minimus
+34 - 34 - - 14 - 12 - 12 - 34 - 14 - 12:Beinn Dubhchraig Minimus
+34 - 34 - - 14 - 12 - 12 - 34 - 14 - 14:Stuc a'Chroin Minimus
+34 - 34 - - 14 - 14 - - 12 - 12 14 - 12:Sgurr nan Eag Minimus
+34 - 34 - - 14 - 14 - 12 - 12 - 14 - 12:Creag Pitridh Minimus
+34 - 34 - - 14 - 14 - 34 - 34 - 14 - 12:Aonach Meadhoin Minimus
+34 - 34 - - 14 - 14 - 34 12 34 12 14 - 12:Stob Dearg Minimus
+34 - 34 - - 14 - 14 12 - 12 - - 14 - 12:Stob Coire Raineach Minimus
+34 - 34 - - 14 - 14 12 34 12 34 - 14 - 12:The Saddle Minimus
+34 - 34 - - 14 - 34 - - 12 - 12 14 - 12:Creag nan Damh Minimus
+34 - 34 - - 14 - 34 - - 12 - 12 14 - 14:Cona' Mheall Minimus
+34 - 34 - - 14 - 34 - 12 - 12 - 14 - 12:A' Ghlas-Bheinn Minimus
+34 - 34 - - 14 - 34 - 12 - 12 - 14 - 14:The Cairnwell Minimus
+34 - 34 - - 14 - 34 - 34 - 34 - 14 - 12:The Devil's Point Minimus
+34 - 34 - - 14 - 34 - 34 - 34 - 14 - 14:Mullach Fraoch-Choire Minimus
+34 - 34 - - 14 - 34 - 34 12 34 12 14 - 12:Ben Challum Minimus
+34 - 34 - - 14 - 34 - 34 12 34 12 14 - 14:Carn an Righ Minimus
+34 - 34 - - 14 - 34 12 - 12 - - 14 - 12:Gairich Minimus
+34 - 34 - - 14 - 34 12 - 12 - - 14 - 14:Beinn Chabhair Minimus
+34 - 34 - - 14 - 34 12 34 12 34 - 14 - 12:Beinn Udlamain Minimus
+34 - 34 - - 14 - 34 12 34 12 34 - 14 - 14:Mullach Coire Mhic Fhearchair Minimus
+34 - 34 - - 14 12 - 12 - - 14 - 14 - 12:Carn a'Chlamain Minimus
+34 - 34 - - 14 12 - 12 - - 34 - 14 - 12:Saileag Minimus
+34 - 34 - - 14 12 - 12 - - 34 - 14 - 14:Carn Liath Minimus
+34 - 34 - - 14 12 - 12 - 12 14 12 14 - 14:Ben More Minimus
+34 - 34 - - 14 12 - 12 - 12 34 12 14 - 12:Carn Mor Dearg Minimus
+34 - 34 - - 14 12 - 12 - 12 34 12 14 - 14:Beinn Mheadhoin Minimus
+34 - 34 - - 14 12 14 12 - 12 - 12 14 - 14:An Riabhachan Minimus
+34 - 34 - - 14 12 14 12 34 12 34 12 14 - 14:Meall a'Bhuiridh Minimus
+34 - 34 - - 14 12 34 12 - 12 - 12 14 - 12:Sgor an Lochain Uaine Minimus
+34 - 34 - - 14 12 34 12 - 12 - 12 14 - 14:Carn Eige Minimus
+34 - 34 - - 14 12 34 12 34 12 34 12 14 - 12:A' Chralaig Minimus
+34 - 34 - - 14 12 34 12 34 12 34 12 14 - 14:Monadh Mor Minimus
+34 - 34 - - 34 - 14 - 12 - - 12 - 12 14 12 - 12 - - 12 - 14 - 34 - - 34 - 34 14:Good Health Treble Bob Minimus
+34 - 34 - 34 14 - 14 - - 12 - 12 14 34 12:Ben Klibreck Minimus
+34 - 34 - 34 14 - 14 - 12 - 12 - 14 34 12:Sgorr Ruadh Minimus
+34 - 34 - 34 14 - 14 12 - 12 - - 14 34 12:Sgurr Thuilm Minimus
+34 - 34 - 34 14 - 34 - - 12 - 12 14 34 12:Ben Lomond Minimus
+34 - 34 - 34 14 - 34 - 12 - 12 - 14 34 12:Slioch Minimus
+34 - 34 - 34 14 - 34 12 - 12 - - 14 34 12:Sgurr Alasdair Minimus
+34 - 34 14:Finchampstead Minimus
+34 - 34 14 - - - 14 - - - 14 34 - 34 12:Batheaston Treble Bob Minimus
+34 - 34 14 - - - 34 - - - 14 34 - 34 12:Derby Treble Bob Minimus
+34 - 34 14 - - - 34 - - - 14 34 - 34 14:Reverse Barby Treble Bob Minimus
+34 - 34 14 - - 12 14 12 - - 14 34 - 34 14:Chaddleworth Treble Bob Minimus
+34 - 34 14 - - 12 34 12 - - 14 34 - 34 12:Iken Treble Bob Minimus
+34 - 34 14 - - 12 34 12 - - 14 34 - 34 14:Reverse Northend Treble Bob Minimus
+34 - 34 14 - 12 - 14 - 12 - 14 34 - 34 14:Kent Treble Bob Minimus
+34 - 34 14 - 12 - 14 - 14 12 14 - 12 - 14 - 12:Harmony Angel Minimus
+34 - 34 14 - 12 - 34 - 12 - 14 34 - 34 12:Keyneston Treble Bob Minimus
+34 - 34 14 - 12 - 34 - 12 - 14 34 - 34 14:Keyneston Treble Bob Minimus
+34 - 34 14 - 12 12 14 12 12 - 14 34 - 34 12:Brown's Folly Treble Bob Minimus
+34 - 34 14 - 12 12 34 12 12 - 14 34 - 34 12:Eclipse Treble Bob Minimus
+34 - 34 14 - 12 12 34 12 12 - 14 34 - 34 14:Eclipse Treble Bob Minimus
+34 - 34 14 - 12 14 - 12 - 14 - 12 14 - 34 14 -:Joe 90 Minimus
+34 - 34 14 - 12 14 - 14 12 - 14 - 12 - 14 - 12:Spectrum Minimus
+34 - 34 14 - 12 14 - 14 12 - 14 34 - 14 - 34 -:Professor McClaine Minimus
+34 - 34 14 - 14 - 14 34 - 34 12:Reverse Norbury Alliance Minimus
+34 - 34 14 - 14 - 34 - 14 - 14 34 - 34 14:Yazor Treble Place Minimus
+34 - 34 14 - 14 12 - 12 14 - 12 - 14 34 - 34 14 - 14 12 - 12 -:Say You Will Minimus
+34 - 34 14 - 14 12 - 12 14 - 34 - 14 34 - 34 14 - 14 - 12 - 12:It Just Won't Quit Minimus
+34 - 34 14 - 14 12 - 12 14 - 34 - 14 34 - 34 14 - 14 12 - 12 -:Original Sin Minimus
+34 - 34 14 - 14 12 34 12 14 - 14 34 - 34 14:Nutfield Treble Place Minimus
+34 - 34 14 - 14 34 - 34 14 - 12 - 14 12 - 12 14 - 14 - 12 - 12:Never Going Back Again Minimus
+34 - 34 14 - 14 34 - 34 14 - 12 - 14 34 - 34 14 - 14 34 - 34 -:Animals Minimus
+34 - 34 14 - 14 34 - 34 14 - 34 - 14 12 - 12 14 - 14 12 - 12 -:Out Of The Frying Pan Minimus
+34 - 34 14 - 14 34 - 34 14 - 34 - 14 34 - 34 14 - 14 34 - 34 -:The Wall Minimus
+34 - 34 14 - 34 - 14 34 - 14 - 34 - 14 12 14 -:Sub-Lieutenant Fisher Minimus
+34 - 34 14 - 34 - 14 34 - 34 12:Reverse Taddington Alliance Minimus
+34 - 34 14 - 34 - 14 34 - 34 14:Reverse Chimichanga Alliance Minimus
+34 - 34 14 - 34 - 34 - 34 - 14 34 - 34 12:Phoenix Arizona Treble Place Minimus
+34 - 34 14 - 34 - 34 - 34 - 14 34 - 34 14:Penrhos Treble Place Minimus
+34 - 34 14 - 34 12 34 12 34 - 14 34 - 34 12:Broxwood Treble Place Minimus
+34 - 34 14 - 34 12 34 12 34 - 14 34 - 34 14:Nextend Treble Place Minimus
+34 - 34 14 12 - - 14 - - 12 14 34 - 34 14:Lower Basildon Treble Bob Minimus
+34 - 34 14 12 - - 34 - - 12 14 34 - 34 12:Berkley Treble Bob Minimus
+34 - 34 14 12 - - 34 - - 12 14 34 - 34 14:Reverse St Catherine's Valley Treble Bob Minimus
+34 - 34 14 12 - 12 14 - 34 14 12:Enimatek Minimus
+34 - 34 14 12 - 12 14 12 - 12 14 34 - 34 12:Moreton Treble Bob Minimus
+34 - 34 14 12 - 12 34 12 - 12 14 34 - 34 12:Rushton Old Treble Bob Minimus
+34 - 34 14 12 - 12 34 12 - 12 14 34 - 34 14:Rushton Old Treble Bob Minimus
+34 - 34 14 12 - 14 - 12 - 14 - 12 14 34 - 14 -:Doctor Venus Minimus
+34 - 34 14 12 - 14 - 14 - 12 14 - 12 - 14 - 12:Supercar Minimus
+34 - 34 14 12 - 14 - 14 - 12 14 34 - 14 - 34 -:Destiny Angel Minimus
+34 - 34 14 12 12 - 14 - 12 12 14 34 - 34 12:Sham Castle Treble Bob Minimus
+34 - 34 14 12 12 - 34 - 12 12 14 34 - 34 12:Slindon Treble Bob Minimus
+34 - 34 14 12 12 - 34 - 12 12 14 34 - 34 14:Reverse Steway Lane Treble Bob Minimus
+34 - 34 14 12 12 12 14 12 12 12 14 34 - 34 14:Stanford Dingley Treble Bob Minimus
+34 - 34 14 12 12 12 34 12 12 12 14 34 - 34 12:Stickland Treble Bob Minimus
+34 - 34 14 12 12 12 34 12 12 12 14 34 - 34 14:Reverse Toller Fratrum Treble Bob Minimus
+34 - 34 14 12 14:Stanton Minimus
+34 - 34 14 12 14 - 14 - 12 - 14 - 12 - 14 - 12:Oink Minimus
+34 - 34 14 12 14 12 14 34 - 34 14:Reverse Hunter GR9 Alliance Minimus
+34 - 34 14 12 34 - 34 - 34 12 14 34 - 34 12:Hopleys Treble Place Minimus
+34 - 34 14 12 34 - 34 - 34 12 14 34 - 34 14:Bearwood Treble Place Minimus
+34 - 34 14 12 34 12 14 34 - 34 12:Reverse Muston Alliance Minimus
+34 - 34 14 12 34 12 14 34 - 34 14:Reverse Chipmunk Alliance Minimus
+34 - 34 14 12 34 12 34 12 34 12 14 34 - 34 12:Tucson Treble Place Minimus
+34 - 34 14 12 34 12 34 12 34 12 14 34 - 34 14:Chickward Treble Place Minimus
+34 - 34 14 34 - 14 14 14 - 34 14 34 - 34 14:Wagtail Treble Place Minimus
+34 - 34 14 34 - 14 34 14 - 34 14 34 - 34 12:Lark Treble Place Minimus
+34 - 34 14 34 - 34 14 - 34 14 12:Degüello Minimus
+34 - 34 14 34 - 34 14 34 - 34 14 - - - 14 - - - 14 34 - 34 14 34 - 34 14 34 - 34 12:Forewood Treble Place Minimus
+34 - 34 14 34 - 34 34 34 - 34 14 34 - 34 12:Vanzy Treble Place Minimus
+34 - 34 14 34 - 34 34 34 - 34 14 34 - 34 14:Clermont Treble Place Minimus
+34 - 34 14 34 12 14 14 14 12 34 14 34 - 34 12:Grouse Treble Place Minimus
+34 - 34 14 34 12 34 14 34 12 34 14 34 - 34 14:Grebe Treble Place Minimus
+34 - 34 14 34 12 34 34 34 12 34 14 34 - 34 14:Bonneguête Treble Place Minimus
+34 12 - 14 - - - 14 - - - 14 - 12 34 12:Reverse Woodbrook Treble Place Minimus
+34 12 - 14 - - - 34 - - - 14 - 12 34 12:Reverse Yarwell Treble Place Minimus
+34 12 - 14 - 12 - 34 - 12 - 14 - 12 34 12:Reverse Thorpe Achurch Treble Place Minimus
+34 12 - 14 - 12 12 14 12 12 - 14 - 12 34 12:Reverse Titley Treble Place Minimus
+34 12 - 14 - 12 12 34 12 12 - 14 - 12 34 12:Reverse Highmore Treble Place Minimus
+34 12 - 14 12 - - 34 - - 12 14 - 12 34 12:Reverse Tombstone Treble Place Minimus
+34 12 - 14 12 - 12 14 12 - 12 14 - 12 34 12:Reverse Nextend Treble Place Minimus
+34 12 - 14 12 - 12 34 12 - 12 14 - 12 34 12:Reverse Broxwood Treble Place Minimus
+34 12 - 14 12 12 - 14 - 12 12 14 - 12 34 12:Reverse Casa Grande Treble Place Minimus
+34 12 - 14 12 12 - 34 - 12 12 14 - 12 34 12:Reverse Parker Treble Place Minimus
+34 12 - 14 12 12 12 34 12 12 12 14 - 12 34 12:Reverse Church Stowe Treble Place Minimus
+34 12 - 14 34 14 - - 12 - 12 14 - 14 - 12:An Caisteal Minimus
+34 12 - 14 34 14 - - 12 - 12 14 - 14 - 14:Ben More Assynt Minimus
+34 12 - 14 34 14 - 12 - 12 - 14 - 14 - 12:Spidean Mialach Minimus
+34 12 - 14 34 14 - 12 - 12 - 14 - 14 - 14:Maoile Lunndaidh Minimus
+34 12 - 14 34 14 12 - 12 - - 14 - 14 - 12:A' Chailleach Minimus
+34 12 - 14 34 14 12 - 12 - - 14 - 14 - 14:Beinn Dearg Minimus
+34 12 14 12 - 12 14 34 12 34 14 12:El Loco Minimus
+34 12 14 34 - 34 14 34 12 34 14 12:La Futura Minimus
+34 12 34 14:St Aelhaiarn Little Place Minimus
+34 12 34 14 - - - 14 - - - 14 34 12 34 12:Reverse Headbrook Treble Place Minimus
+34 12 34 14 - - - 34 - - - 14 34 12 34 12:Reverse Fawsley Treble Place Minimus
+34 12 34 14 - - 12 34 12 - - 14 34 12 34 12:Reverse Sierra Vista Treble Place Minimus
+34 12 34 14 - 12 - 14 34 12 34 -:Meddle Minimus
+34 12 34 14 - 12 - 34 - 12 - 14 34 12 34 12:Reverse Lutton Treble Place Minimus
+34 12 34 14 - 12 12 14 12 12 - 14 34 12 34 12:Reverse Tempe Treble Place Minimus
+34 12 34 14 - 12 12 34 12 12 - 14 34 12 34 12:Reverse Safford Treble Place Minimus
+34 12 34 14 - 14 - - 12 - 12 14 - 14 - 14:Am Bodach Minimus
+34 12 34 14 - 14 - 12 - 12 - 14 - 14 - 14:Gleouraich Minimus
+34 12 34 14 - 14 - 34 - 14 12 - 14 - 14 12 34 14:Doctor Beaker Minimus
+34 12 34 14 - 14 12 - 12 - - 14 - 14 - 14:Carn a'Mhaim Minimus
+34 12 34 14 - 34 - 14 34 12 34 -:Obscured By Clouds Minimus
+34 12 34 14 12 - - 34 - - 12 14 34 12 34 12:Reverse Bisbee Treble Place Minimus
+34 12 34 14 12 - 12 14 12 - 12 14 34 12 34 12:Reverse Chickward Treble Place Minimus
+34 12 34 14 12 - 12 34 12 - 12 14 34 12 34 12:Reverse Tucson Treble Place Minimus
+34 12 34 14 12 12 - 14 - 12 12 14 34 12 34 12:Reverse Maricopa Treble Place Minimus
+34 12 34 14 12 12 - 34 - 12 12 14 34 12 34 12:Reverse Lake Havasu City Treble Place Minimus
+34 12 34 14 12 12 12 34 12 12 12 14 34 12 34 12:Reverse Barby Treble Place Minimus
+34 1234 1234 1234 1234 1234 1234 1234 1234 1234 14 1234 1234 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234 1234 1234 34 1234 1234 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234 1234 1234 14 1234 1234 1234 1234 1234 1234 1234 1234 1234 34 1234 1234 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234 1234 1234:Double Canterbury Dectets Treble Place Minimus
+34 1234 1234 1234 1234 1234 1234 1234 14 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234 34 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234 14 1234 1234 1234 1234 1234 1234 1234 34 1234 1234 1234 1234 1234 1234 1234 12 1234 1234 1234 1234 1234 1234 1234:Double Canterbury Octets Treble Place Minimus
+34 14 - - - 14 - - - 14 34 12:Jet Provost Alliance Minimus
+34 14 - - - 14 - - - 14 34 14:Vulcan B2 Alliance Minimus
+34 14 - - - 34 - - - 14 34 12:Barkeston Alliance Minimus
+34 14 - - 12 14 12 - - 14 34 14:Ayston Alliance Minimus
+34 14 - - 12 34 12 - - 14 34 12:Pickwell Alliance Minimus
+34 14 - 12 - 14 - 12 - 14 34 14:Lyndon Alliance Minimus
+34 14 - 12 - 34 - 12 - 14 34 12:Sibson Alliance Minimus
+34 14 - 12 12 14 12 12 - 14 34 12:Flauta Alliance Minimus
+34 14 - 12 12 14 12 12 - 14 34 14:Tornado F3 Alliance Minimus
+34 14 - 12 12 34 12 12 - 14 34 12:Peatling Magna Alliance Minimus
+34 14 - 12 14 -:Lathors Cure Alliance Minimus
+34 14 - 12 14 34 12:Rhubarb Alliance Minimus
+34 14 - 14 - - - 14 - - - 14 - 14 34 12:Reverse Orange Circus Treble Place Minimus
+34 14 - 14 - - 12 14 12 - - 14 - 14 34 12:Reverse Gila Bend Treble Place Minimus
+34 14 - 14 - 12 - 14 - 12 - 14 - 14 34 12:Reverse Yuma Treble Place Minimus
+34 14 - 14 - 12 12 14 12 12 - 14 - 14 34 12:Reverse Westonbury Treble Place Minimus
+34 14 - 14 - 14 -:Elmstone Hardwicke Alliance Minimus
+34 14 - 14 - 14 - 12 - 14 - 14 - 14 - 12 - 14 - 14 - 14 34 12:Ufton Nervet Treble Place Minimus
+34 14 - 14 - 14 - 14:Grandsire Minimus
+34 14 - 14 - 14 - 14 - 14 - 14 - 14 34 12:Canning Treble Place Minimus
+34 14 - 14 - 14 - 14 - 14 - 14 - 14 34 14:Anthony Treble Place Minimus
+34 14 - 14 - 14 - 14 34 14 - 14 - 14 34 14 - 14 - 14 - 14 34 14:Dunholme Court Treble Place Minimus
+34 14 - 14 - 14 34 12:Reverse Canterbury Place Minimus
+34 14 - 14 - 14 34 14:Reverse Canterbury Place Minimus
+34 14 - 14 - 14 34 14 - 14 - 14 - 14 34 14 34 14 - 14 - 14 - 14:Wigford Court Treble Place Minimus
+34 14 - 14 - 14 34 14 - 14 - 14 12 14 34 14 34 14 12 14 - 14 - 14:Lindum Court Treble Place Minimus
+34 14 - 14 - 14 34 14 34 14 - 14 12 14 34 14 34 14 12 14 - 14 34 14:St Hugh's Court Treble Place Minimus
+34 14 - 14 12 - - 14 - - 12 14 - 14 34 12:Reverse Scottsdale Treble Place Minimus
+34 14 - 14 12 - 12 14 12 - 12 14 - 14 34 12:Reverse Nutfield Treble Place Minimus
+34 14 - 14 12 12 - 14 - 12 12 14 - 14 34 12:Reverse Moorcot Treble Place Minimus
+34 14 - 14 12 12 12 14 12 12 12 14 - 14 34 12:Reverse Holme Marsh Treble Place Minimus
+34 14 - 14 12 14 - 12 - 14 - 14 - 14 - 12 - 14 12 14 - 14 34 12:Higgledy Piggledy Treble Place Minimus
+34 14 - 14 12 14 12 14 - 14 12 14:Reverse Tinwell Minimus
+34 14 - 14 12 14 34 12:Charollais Place Minimus
+34 14 - 14 12 14 34 12 34 14 - 14 - 14 34 12 34 14 12 14 - 14 34 12:Dorton Treble Place Minimus
+34 14 - 14 12 14 34 14 - 14 34 14:Morcott Minimus
+34 14 - 14 12 14 34 14 34 14 12 14 - 14 34 14 34 14 - 14 - 14 34 14:Brayford Court Treble Place Minimus
+34 14 - 14 34 - 34 14 - 14 34 14:A Saucerful Of Secrets Minimus
+34 14 - 34 - 14 -:Daglingworth Alliance Minimus
+34 14 - 34 - 14 - 12 - 14 - 34 - 14 - 12 - 14 - 34 - 14 34 12:Chaotic Treble Place Minimus
+34 14 - 34 - 14 - 12 - 14 12 34 12 14 - 12 - 14 - 34 - 14 34 12:Double Wooly-back Treble Place Minimus
+34 14 - 34 - 14 34 12:St Nicholas Bob Minimus
+34 14 - 34 - 14 34 12 34 14 12 34 12 14 34 12 34 14 - 34 - 14 34 12:Barkham Treble Place Minimus
+34 14 - 34 - 14 34 12 34 14 34 - 34 14 34 12 34 14 - 34 - 14 34 -:Teesport Treble Place Minimus
+34 14 - 34 14 34 14 34 - 14 34 14:Stedman Alliance Minimus
+34 14 12 - - 14 - - 12 14 34 14:South Luffenham Alliance Minimus
+34 14 12 - - 34 - - 12 14 34 12:Burrough-on-the-Hill Alliance Minimus
+34 14 12 - 12 14 12 - 12 14 34 12:Chipmunk Alliance Minimus
+34 14 12 - 12 14 12 - 12 14 34 14:Hunter GR9 Alliance Minimus
+34 14 12 - 12 14 34 -:Egloskerry Minimus
+34 14 12 - 12 34 12 - 12 14 34 12:Muston Alliance Minimus
+34 14 12 - 14 -:Smod Hole Inn Alliance Minimus
+34 14 12 - 14 12 - 12 14 12 - 12:Mescalero Minimus
+34 14 12 - 14 34 - 34 14 12 - 12:Ketamine Minimus
+34 14 12 - 14 34 12:Custard Alliance Minimus
+34 14 12 12 - 14 - 12 12 14 34 12:Taco Alliance Minimus
+34 14 12 12 - 14 - 12 12 14 34 14:Phantom F4 Alliance Minimus
+34 14 12 12 - 34 - 12 12 14 34 12:Carlton-by-Bosworth Alliance Minimus
+34 14 12 12 12 14 12 12 12 14 34 14:Tugby Alliance Minimus
+34 14 12 12 12 34 12 12 12 14 34 12:Dalby-on-the-Wolds Alliance Minimus
+34 14 12 14 - 12 - 14 34 14 12 -:You Took The Words Right Out Of My Mouth Minimus
+34 14 12 14 - 14 - 14 34 14 - 14 - 14 34 14 - 14 - 14 12 14 34 14:Ermine Court Treble Place Minimus
+34 14 12 14 - 14 34 12:Lleyn Place Minimus
+34 14 12 14 - 14 34 14 34 14 - 14 - 14 34 14 34 14 - 14 12 14 34 14:Swanpool Court Treble Place Minimus
+34 14 12 14 - 34 - 14 34 14 12 -:Rio Grande Mud Minimus
+34 14 12 14 12 14 34 14:Double Court Place Minimus
+34 14 12 14 12 14 34 14 12 14 12 -:Eliminator Minimus
+34 14 12 14 12 14 34 14 34 14 12 -:The Final Cut Minimus
+34 14 12 14 34 12 34 14 34 14 34 12 34 14 34 14 34 12 34 14 12 14 34 14:Landbeach Treble Place Minimus
+34 14 12 14 34 14:Ten Rides Minimus
+34 14 12 34 12 14 -:Clearwell Alliance Minimus
+34 14 12 34 12 14 - 12 - 14 - 34 - 14 - 12 - 14 12 34 12 14 34 12:St. Denys' Pleasure Treble Place Minimus
+34 14 12 34 12 14 - 12 - 14 12 34 12 14 - 12 - 14 12 34 12 14 34 12:Lower Basildon Treble Place Minimus
+34 14 12 34 12 14 34 12:Double Canterbury Place Minimus
+34 14 12 34 12 14 34 12 34 14 - 34 - 14 34 12 34 14 12 34 12 14 34 12:Stanford Dingley Treble Place Minimus
+34 14 34 - 34 14 - 14 34 - 34 14:Flat Rock Minimus
+34 14 34 - 34 14 12 34 12 14 34 12:Ummagumma Minimus
+34 14 34 - 34 14 34 14 12 - 12 14:Ridlington Minimus
+34 14 34 12 34 14 12 14 34 14 - 14 34 12 34 14 12 14 - 14 34 12 34 14:St Swithun Minimus
+34 14 34 12 34 14 12 34 12 14 12 -:Heaven Can Wait Minimus
+34 14 34 14 -:Churn Valley Little Alliance Minimus
+34 14 34 14 - - 12 14 12 - - 14 34 14 34 12:Reverse Nogales Treble Place Minimus
+34 14 34 14 - - 12 34 12 - - 14 34 14 34 12:Reverse Mansell Gamage Treble Place Minimus
+34 14 34 14 - 12 - 14 - 12 - 14 34 14 34 12:Reverse Buckeye Treble Place Minimus
+34 14 34 14 - 12 - 34 - 12 - 14 34 14 34 12:Reverse Lulham Treble Place Minimus
+34 14 34 14 12:Rustic Minimus
+34 14 34 14 12 - - 14 - - 12 14 34 14 34 12:Reverse Ajo Treble Place Minimus
+34 14 34 14 12 - - 34 - - 12 14 34 14 34 12:Reverse Brinsop Treble Place Minimus
+34 14 34 14 12 - 12 14 - 34 - 12:Who Dares Wins Minimus
+34 14 34 14 12 12 12 34 12 12 12 14 34 14 34 12:Reverse Bridge Sollers Treble Place Minimus
+34 14 34 14 12 14 34 14 12 14 12 -:Bat Out Of Hell Minimus
+34 14 34 14 12 14 34 14 34 14 12 -:Antenna Minimus
+34 14 34 14 34 - 34 14 - 34 - 12:Tejas Minimus
+34 14 34 14 34 12:East Layton Little Place Minimus
+34 34 - 14 - - - 14 - - - 14 - 34 34 12:Cubley Treble Bob Minimus
+34 34 - 14 - - - 34 - - - 14 - 34 34 12:Newbold Pacey Treble Bob Minimus
+34 34 - 14 - - - 34 - - - 14 - 34 34 14:Newbold Pacey Treble Bob Minimus
+34 34 - 14 - - 12 14 12 - - 14 - 34 34 14:Bhuna Treble Bob Minimus
+34 34 - 14 - - 12 34 12 - - 14 - 34 34 12:Bolnhurst Treble Bob Minimus
+34 34 - 14 - - 12 34 12 - - 14 - 34 34 14:Bolnhurst Treble Bob Minimus
+34 34 - 14 - 12 - 14 - 12 - 14 - 34 34 14:Reverse Launceston Treble Bob Minimus
+34 34 - 14 - 12 - 34 - 12 - 14 - 34 34 12:Kemp Town Treble Bob Minimus
+34 34 - 14 - 12 - 34 - 12 - 14 - 34 34 14:Kemp Town Treble Bob Minimus
+34 34 - 14 - 12 12 14 12 12 - 14 - 34 34 12:Shockerwick Treble Bob Minimus
+34 34 - 14 - 12 12 34 12 12 - 14 - 34 34 12:Ashow Treble Bob Minimus
+34 34 - 14 - 12 12 34 12 12 - 14 - 34 34 14:Ashow Treble Bob Minimus
+34 34 - 14 - 14 - 14 - 34 34 12:Reverse Lichfield St Chad Alliance Minimus
+34 34 - 14 - 14 - 34 - 14 - 14 - 34 34 14:Woonton Treble Place Minimus
+34 34 - 14 - 14 12 34 12 14 - 14 - 34 34 14:Westonbury Treble Place Minimus
+34 34 - 14 - 34 - 14 - 34 34 12:Reverse Sutton Scarsdale Alliance Minimus
+34 34 - 14 - 34 - 14 - 34 34 14:Reverse Enchilada Alliance Minimus
+34 34 - 14 - 34 - 34 - 34 - 14 - 34 34 12:Bullhead City Treble Place Minimus
+34 34 - 14 - 34 - 34 - 34 - 14 - 34 34 14:Glendale Treble Place Minimus
+34 34 - 14 - 34 12 34 12 34 - 14 - 34 34 12:Highmore Treble Place Minimus
+34 34 - 14 - 34 12 34 12 34 - 14 - 34 34 14:Titley Treble Place Minimus
+34 34 - 14 12 - - 14 - - 12 14 - 34 34 14:Reverse Angela Treble Bob Minimus
+34 34 - 14 12 - - 34 - - 12 14 - 34 34 12:Spetchley Treble Bob Minimus
+34 34 - 14 12 - - 34 - - 12 14 - 34 34 14:Reverse Little Solsbury Hill Treble Bob Minimus
+34 34 - 14 12 - 12 14 12 - 12 14 - 34 34 12:Reverse Gunville Treble Bob Minimus
+34 34 - 14 12 - 12 34 12 - 12 14 - 34 34 12:Waresley Treble Bob Minimus
+34 34 - 14 12 - 12 34 12 - 12 14 - 34 34 14:Reverse Brown's Folly Treble Bob Minimus
+34 34 - 14 12 12 - 14 - 12 12 14 - 34 34 12:Fosse Lane Treble Bob Minimus
+34 34 - 14 12 12 - 34 - 12 12 14 - 34 34 12:Reverse Shipton Gorge Treble Bob Minimus
+34 34 - 14 12 12 - 34 - 12 12 14 - 34 34 14:Reverse Marshfield Treble Bob Minimus
+34 34 - 14 12 12 12 14 12 12 12 14 - 34 34 14:Reverse Himbleton Treble Bob Minimus
+34 34 - 14 12 12 12 34 12 12 12 14 - 34 34 12:Draughton Treble Bob Minimus
+34 34 - 14 12 12 12 34 12 12 12 14 - 34 34 14:Reverse Ufton Nervet Treble Bob Minimus
+34 34 - 14 12 14 12 14 - 34 34 14:Reverse Tornado F3 Alliance Minimus
+34 34 - 14 12 34 - 34 - 34 12 14 - 34 34 12:Kingswood Treble Place Minimus
+34 34 - 14 12 34 - 34 - 34 12 14 - 34 34 14:Burchur Treble Place Minimus
+34 34 - 14 12 34 12 14 - 34 34 12:Reverse Peatling Magna Alliance Minimus
+34 34 - 14 12 34 12 14 - 34 34 14:Reverse Flauta Alliance Minimus
+34 34 - 14 12 34 12 34 12 34 12 14 - 34 34 12:Safford Treble Place Minimus
+34 34 - 14 12 34 12 34 12 34 12 14 - 34 34 14:Tempe Treble Place Minimus
+34 34 - 14 34 - 14 14 14 - 34 14 - 34 34 14:Warbler Treble Place Minimus
+34 34 - 14 34 - 14 34 14 - 34 14 - 34 34 12:Hawfinch Treble Place Minimus
+34 34 - 14 34 - 34 14 34 - 34 14 - 34 34 12:Thrush Treble Place Minimus
+34 34 - 14 34 - 34 34 34 - 34 14 - 34 34 12:Bassy Treble Place Minimus
+34 34 - 14 34 - 34 34 34 - 34 14 - 34 34 14:Crempigny Treble Place Minimus
+34 34 - 14 34 12 14 14 14 12 34 14 - 34 34 12:Pheasant Treble Place Minimus
+34 34 - 14 34 12 34 14 34 12 34 14 - 34 34 14:Plover Treble Place Minimus
+34 34 - 14 34 12 34 34 34 12 34 14 - 34 34 12:Designy Treble Place Minimus
+34 34 - 14 34 12 34 34 34 12 34 14 - 34 34 14:Droisy Treble Place Minimus
+34 34 34 14 - - - 14 - - - 14 34 34 34 12:Little Bedwyn Treble Bob Minimus
+34 34 34 14 - - - 14 - - - 14 34 34 34 14:Little Bedwyn Treble Bob Minimus
+34 34 34 14 - - - 34 - - - 14 34 34 34 12:St Aelhaiarn Treble Bob Minimus
+34 34 34 14 - - 12 14 12 - - 14 34 34 34 14:69 Treble Bob Minimus
+34 34 34 14 - - 12 34 12 - - 14 34 34 34 12:Reverse Truffler Treble Bob Minimus
+34 34 34 14 - 12 - 14 - 12 - 14 34 34 34 14:Stourton Caundle Treble Bob Minimus
+34 34 34 14 - 12 - 34 - 12 - 14 34 34 34 12:Kermit Treble Bob Minimus
+34 34 34 14 - 12 12 14 12 12 - 14 34 34 34 12:Ufton Nervet Treble Bob Minimus
+34 34 34 14 - 12 12 14 12 12 - 14 34 34 34 14:Ufton Nervet Treble Bob Minimus
+34 34 34 14 - 12 12 34 12 12 - 14 34 34 34 12:Reverse Draughton Treble Bob Minimus
+34 34 34 14 - 14 - 14 34 34 34 12:Reverse Chebsey Alliance Minimus
+34 34 34 14 - 14 - 14 34 34 34 14:Reverse South Croxton Alliance Minimus
+34 34 34 14 - 14 - 34 - 14 - 14 34 34 34 14:Moonlight Treble Place Minimus
+34 34 34 14 - 14 12 34 12 14 - 14 34 34 34 14:Holme Marsh Treble Place Minimus
+34 34 34 14 - 34 - 14 34 34 34 12:Reverse Elvaston Alliance Minimus
+34 34 34 14 - 34 - 34 - 34 - 14 34 34 34 12:Ashby St Ledgers Treble Place Minimus
+34 34 34 14 - 34 12 34 12 34 - 14 34 34 34 12:Church Stowe Treble Place Minimus
+34 34 34 14 12 - - 14 - - 12 14 34 34 34 14:Dhansak Treble Bob Minimus
+34 34 34 14 12 - - 34 - - 12 14 34 34 34 12:Outwood Treble Bob Minimus
+34 34 34 14 12 - 12 14 12 - 12 14 34 34 34 12:Toller Fratrum Treble Bob Minimus
+34 34 34 14 12 - 12 14 12 - 12 14 34 34 34 14:Toller Fratrum Treble Bob Minimus
+34 34 34 14 12 - 12 34 12 - 12 14 34 34 34 12:Reverse Stickland Treble Bob Minimus
+34 34 34 14 12 12 - 14 - 12 12 14 34 34 34 12:Brimpton Treble Bob Minimus
+34 34 34 14 12 12 - 14 - 12 12 14 34 34 34 14:Brimpton Treble Bob Minimus
+34 34 34 14 12 12 - 34 - 12 12 14 34 34 34 12:Foremark Treble Bob Minimus
+34 34 34 14 12 12 12 14 12 12 12 14 34 34 34 14:Defford Treble Bob Minimus
+34 34 34 14 12 12 12 34 12 12 12 14 34 34 34 12:Clearwell Treble Bob Minimus
+34 34 34 14 12 14 - 34 - 14 12 14 34 34 34 12:Swainshill Treble Place Minimus
+34 34 34 14 12 14 12 14 34 34 34 14:Reverse Tugby Alliance Minimus
+34 34 34 14 12 14 12 34 12 14 12 14 34 34 34 12:Bridge Sollers Treble Place Minimus
+34 34 34 14 12 34 - 34 - 34 12 14 34 34 34 12:Edgcote Treble Place Minimus
+34 34 34 14 12 34 12 14 34 34 34 12:Reverse Dalby-on-the-Wolds Alliance Minimus
+34 34 34 14 12 34 12 34 12 34 12 14 34 34 34 12:Barby Treble Place Minimus
+34 34 34 14 34 - 34 34 34 - 34 14 34 34 34 12:Beauchâtel Treble Place Minimus
+34 34 34 14 34 12 34 14 34 12 34 14 34 34 34 14:Quo Vadis Treble Place Minimus
+34 34 34 14 34 12 34 34 34 12 34 14 34 34 34 12:Traînant Treble Place Minimus
+34 34 34 34 34 14 12 12 12 12 12 14 12 12 12 12 12 14 34 34 34 34 34 14:Also Bolux Double Treble Bob Minimus
+34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 14:Really Bolux Triple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 14:Absolutely Bolux Quadruple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 34 34 14:Immensely Bolux Quintuple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 34 34 34 34 14:Unquestionably Bolux Sextuple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14:Painfully Bolux Septuple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14:Exceedingly Bolux Octuple Treble Bob Minimus
+34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 14 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 14:Enough of this Bolux Nonuple Treble Bob Minimus
+[3142] 14 - 14 - 14 [2413] 1[432]:Simple Jump Minimus
+[3142] 14 [2413] [321]4 [3142] 14 [2413] 1[432]:Double Simple Jump Minimus
