@@ -3,7 +3,8 @@ Option Compare Text
 
 Module GetMethodAndTouch
 #Const RunFromCommandLine = True
-    Public Const Version_const = "1.0.0.6"
+
+    Public Const Version_const = "1.0.6.0"
     Public Const Hand = -1  '= True
     Public Const Back = 0   '= False
     Public Const No_Of_Rows_Const = 6500
@@ -15,6 +16,7 @@ Module GetMethodAndTouch
 
 
     Public Const MethodPNLength_const = 200
+    Public Const constErrorAllowance = 3.5
 
     'constants for common dialog form
     Public Const cdlOFNHideReadOnly = &H4
@@ -67,10 +69,13 @@ Module GetMethodAndTouch
     Public glbHandRatio As Single, glbAlpha As Single, glbBeta As Single
     Public glbAvHGap As Single, glbAvGap As Single, glbRMS As Single
     Public glbInputFile As String, glbOutputFile As String
-    Public glbTouchScript As String, glbMethodFound As Boolean
+    Public glbTouchScript As String, glbMethodFound As Boolean, glbIsOdd As Boolean
+    Public glbSuccess As Boolean 'touch analysed successfully
 
-    Public glbMethodPN(MethodPNLength_const) As String
-
+    Public glbMethodPN(MethodPNLength_const) As String 'contains the PN list
+    'of current method but excluding LE
+    Public glbFindPN(MethodPNLength_const) As String
+    'used for discovering PN lists
 
     Public glbDingArray(MaxDings_const) As BellTimeStructure
 
@@ -120,9 +125,10 @@ Module GetMethodAndTouch
 #If Not RunFromCommandLine Then
         '***These are some test files that work OK
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\StedmanDoubles.crl"
-        'glbInputFile = "C:\Users\Martin\Documents\vs2019\YorkshireLittle12_20_06_17.crl"
-        'glbInputFile = "C:\Users\Martin\Documents\vs2019\PlainLittleTest.crl"
-        'glbInputFile = "C:\Users\Martin\Documents\vs2019\GrandsireTriples.crl"
+        'glbInputFile = "C:\Users\Martin\Documents\vs2019\YorkshireLittle12_20_06_17.crl"    'poor ringing 
+        'glbInputFile = "C:\Users\Martin\Documents\vs2019\PlainLittleTest.crl"  'bob, go little
+        'glbInputFile = "C:\Users\Martin\Documents\vs2019\GrandsireTriplesA.crl"
+        'glbInputFile = "C:\Users\Martin\Documents\vs2019\ErinTriples.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\PBMQuarterJH.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Cambridege10_29_03_16.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Grandsire9_29_03_16.crl"
@@ -141,13 +147,16 @@ Module GetMethodAndTouch
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\badringing2.csv" '  (very bad plain hunt on 9)
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Exeter.20190622-1600.s12t12.9.bl.csv" '(Stedman Cinques)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\Walsall.20200308-1520.s12t12.8.0.bl.csv" ' (treble-bobbing)
-        glbInputFile = "C:\Users\Martin\Documents\VS2019\peal1.csv" ' (Peal of Cambridge Max, treble backstroke snap ending)
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\peal1.csv" ' (Peal of Cambridge Max, treble backstroke snap ending)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\t1.csv" ' (Lincolnshire Max, "Handstroke uplift")
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\qweqweqwe.csv" ' (London no 3 spliced with little Max,)
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\uplin.csv" ' (Up maximus, artificial perfect ringing)
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\University_of_Bristol_treble_place_8lin.csv" ' 
 #End If
         OpenHawkearCSV(glbInputFile)    '*** for Hawkear input files
         'OpenCirelFile(glbInputFile)    '*** for Cirel input files
 
+        glbSuccess = True
         glbTouchScript = ""
         DetectMethod()  'tries to work out the method,
         'then saves method name and stage, or error message to global variables
@@ -157,6 +166,9 @@ Module GetMethodAndTouch
         'if successful saves touch script to glbTouchScript.
         'if unsuccessful indicates stage and start row to glbTouchScript
         SaveMethodAndTouch()  'saves global info to output text file
+        SavePNList()    'saves PN list to output PNL file
+        SaveRows()
+
         Exit Sub
 
 errorhandler:
@@ -166,6 +178,7 @@ errorhandler:
             Exit Sub
         Else
             ErrorLog("!!! " & Err.Number & ": " & Err.Description)
+            glbSuccess = False
         End If
 
 
@@ -205,6 +218,94 @@ errorhandler:
 
 errorhandler:
         ErrorLog("!!! Touch save error: " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
+
+    End Sub
+    Private Sub SavePNList()
+        'Writes glbPNList to glbOutputFile.pnl
+        Dim Filenum As Integer, i As Integer, lclOutPutFile As String, lclPNList As String
+
+        On Error GoTo errorhandler
+
+        'generate new file name dot pnl instead of dot whatever
+        'note code assumes glbOutputFile has a three-letter extension
+        lclOutPutFile = Left$(glbOutputFile, Len(glbOutputFile) - 3)
+        lclOutPutFile &= "pnl"
+
+        Filenum = FreeFile()
+
+        FileOpen(Filenum, lclOutPutFile, OpenMode.Output)
+        If Not glbSuccess Then
+            FileClose(Filenum)
+            Exit Sub
+        End If
+
+        lclPNList = ""
+        i = 1
+        Do Until glbPNList(i) = ""
+            lclPNList = lclPNList & glbPNList(i) & "."  'get next PN and concatenate a .
+            i += 1
+        Loop
+
+        PrintLine(Filenum, lclPNList)
+        FileClose(Filenum)
+
+        Exit Sub
+
+errorhandler:
+        If Err.Number = 53 Then
+            Resume Next 'nothing to kill
+        Else
+            ErrorLog("!!! Save PN list error: " & Err.Number & ": " & Err.Description)
+            glbSuccess = False
+        End If
+
+    End Sub
+    Private Sub SaveRows()
+        'Writes glbRowsArray to glbOutputFile.row
+        Dim Filenum As Integer, i As Integer, j As Integer, lclOutPutFile As String, lclRow As String
+
+        On Error GoTo errorhandler
+
+
+
+
+        'generate new file name dot row instead of dot whatever
+        'note code assumes glbOutputFile has a three-letter extension
+        lclOutPutFile = Left$(glbOutputFile, Len(glbOutputFile) - 3)
+        lclOutPutFile &= "row"
+
+        Filenum = FreeFile()
+        FileOpen(Filenum, lclOutPutFile, OpenMode.Output)
+        If Not glbSuccess Then
+            FileClose(Filenum)
+            Exit Sub
+        End If
+        If glbRowsArray(1, 1) = "" Then
+            'attempt to analyse touch unsuccessful and no rows generated 
+            'clear all data from any previous run
+            FileClose(Filenum)
+            Exit Sub
+        End If
+
+        For i = 1 To glbEndRow
+            lclRow = ""
+            For j = 1 To glbNo_Of_Bells
+                lclRow += glbRowsArray(i, j)
+            Next
+            PrintLine(Filenum, lclRow)
+        Next
+        FileClose(Filenum)
+
+        Exit Sub
+
+errorhandler:
+        If Err.Number = 53 Then
+            Resume Next 'nothing to kill
+        Else
+            ErrorLog("!!! Save Rows error: " & Err.Number & ": " & Err.Description)
+            glbSuccess = False
+        End If
 
     End Sub
     Private Function UnBelvert(Bell As Object) As Char
@@ -310,6 +411,7 @@ errorhandler:
 
 errorhandler:
         ErrorLog("!!! Error calculating handstroke gap: " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
     End Sub
 
@@ -360,18 +462,18 @@ errorhandler:
         'finds out when treble next leads a full, right lead
         'assumes this is the lead length
         'returns lead length, or 0 if lead length greater than 4 * no of ch bells
-        'or less than 8
+
         Dim Count As Integer
         Count = 2
         Do
-            Count += 1
+            Count += 2
             If Count > 4 * no_of_ch_bells Then
                 DiscoverLL = 0
                 Exit Function
             Else
                 If glbData(start + Count, 1).bellch = "1" And
-                   glbData(start + Count + 1, 1).bellch = "1" And
-                   Count Mod 2 = 0 Then
+                   glbData(start + Count + 1, 1).bellch = "1" Then
+
                     DiscoverLL = Count + 2
                     Exit Do
                 End If
@@ -429,6 +531,7 @@ errorhandler:
 
             Name = Mid$(Entry, m + 1, n - m - 1)
 
+
             If Name Like MethodName Then
                 'found the method
                 CheckMethod = True
@@ -449,6 +552,7 @@ errorhandler:
         FileClose(Filenum)
         If CheckMethod = False Then
             ErrorLog("!!! Cannot find " & MethodName & " in " & Path)
+            glbSuccess = False
         End If
 
 
@@ -512,8 +616,9 @@ errorhandler:
 
                     If RowString = Rounds And RowNo - glbStartRow > 3 Then
                         'allow rounds on start + 1 of treble bobbing
-                        If glbMethodPN(n) = "" Then glbPNList(RowNo - 1) = glbPNList(RowNo - 1) & "L"
+                        'If glbMethodPN(n) = "" Then glbPNList(RowNo - 1) = glbPNList(RowNo - 1) & "L"
                         'need to append "L" to PN for this rounds row - see erin example
+                        glbPNList(RowNo - 1) = glbPNList(RowNo - 1) & "R"
                         GoTo Finish
                     End If
 
@@ -556,7 +661,14 @@ Finish:
         glbThatsAllRow = RowNo
         'may get here several times during touch analysis, but last time may be All
         '(variable also gets updated in ImplementCall)
-        GenerateRounds(RowNo, 100)
+        m = RowNo
+        Do Until glbPNList(m) = ""
+            glbPNList(m) = ""
+            m += 1
+        Loop
+        'remove dangling PN's
+
+        GenerateRounds(RowNo + 1, 100)
         RowNo = RowNo + n - 1
 
         glbPNList(StartPos - 1) = glbPNList(StartPos - 1) & Annotation
@@ -566,23 +678,45 @@ Finish:
 
 errorhandler:
         ErrorLog("!!! GenerateRows Error: " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
     End Function
 
     Public Sub DiscoverTouch()
         'Attempts to work out where/what the calls are, assuming method has been set
-        'returns True if successful
+        'Bases its decisions on the amount of striking errors there are compared to
+        'the average during the initial rounds and first lead up to but excluding
+        'a possible call.  If the errors are large then it is assumed some call has been
+        'made.  Calls are tried out and if this results in striking errors similar to
+        '(no worse than thrice) the rounds errors then this is taken as what actually
+        'happened.  In the case that the band went wrong, and no call seems to reduce
+        'the errors down to 'good' then we look at the possibility of a change of method
+        'If we can't find a new method (assume striking is just bad) the least bad situation
+        'is assumed to have taken place.
         Dim CallOption As Byte
         Dim lclStartRow As Integer, Inc As Integer, LEMinusRow As Integer
         Dim i As Integer, j As Integer
         Dim TwoElementCall As Boolean, StillPossProb As Boolean
         Dim InitialRMSError As Single, RMSErrorLead As Single
         Dim SavedRMSResults(8) As Single, BestResult As Single
-        Dim Rounds As String, RowStr As String
+        Dim Rounds As String, RowStr As String, MethodName As String
         Dim NoOfRubbishLeads As Integer
         Dim CallPN As String, CallPN2 As String
+        Dim Filenum As Long
+        Dim Path2Z As String
+        Dim MethodFound As Boolean, IsOdd As Boolean, StedmanType As Boolean
+        Dim MethodNames() As String, no_of_method_changes As Byte
+
 
         NoOfRubbishLeads = 0
+        no_of_method_changes = 0
+        ReDim MethodNames(1)
+        MethodNames(1) = glbMethodName
+
+        StedmanType = glbMethodName Like "stedman" Or
+                      glbMethodName Like "erin" Or
+                      glbMethodName Like "cloisters"
+
 
         If InStr(glbSingle1, ",") = 0 Then
             'calls are single-element at LE + 1
@@ -622,12 +756,26 @@ errorhandler:
 
         'LEMinusrow is last row before a possible call
 
+        If glbStatsEndRow - glbStatsStartRow > 12 Then
+            'perhaps repeated starts with rubbish between pull-off
+            'and start of changes
+            'Also, the rounds might be rather better than the norm
+            'and this check gets the last 12 rows before the first
+            'lead end as a better indicator of average striking.
+            'Including it allows the Bristol Major file
+            'barnes.20190312-1129.s8t8.Trial.bl.csv
+            'to be analysed OK
+            glbStatsStartRow = glbStatsEndRow - 11
+        End If
+
         InitialRMSError = CalcRMSStriking()
-        'got an idea of band's striking ability during initial rounds and first lead
+        'got an idea of band's striking ability during the
+        '11 rows up to but excluding first lead end
         Do
             'now see what happens over the lead end and next lead
             LEMinusRow += Inc
             glbStatsStartRow = LEMinusRow - Inc
+            Debug.Print(glbStatsStartRow)
             glbStatsEndRow = glbStatsStartRow + Inc
             If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
             RMSErrorLead = CalcRMSStriking()
@@ -639,9 +787,10 @@ errorhandler:
                 'need to update touch script with whatever has been discovered so far
                 CreateTouchScript()
                 ErrorLog("!!! Calc RMS error at LE " & LEMinusRow)
+                glbSuccess = False
                 Exit Sub
             End If
-            If RMSErrorLead <= 3 * InitialRMSError Then
+            If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                 StillPossProb = False
                 NoOfRubbishLeads = 0
                 'carry on, plain lead
@@ -706,7 +855,7 @@ errorhandler:
                         If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                         RMSErrorLead = CalcRMSStriking()
 
-                        If RMSErrorLead <= 3 * InitialRMSError Then
+                        If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                             'sorted
                             StillPossProb = False
                             NoOfRubbishLeads = 0
@@ -734,7 +883,7 @@ errorhandler:
                     If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                     RMSErrorLead = CalcRMSStriking()
 
-                    If RMSErrorLead <= 3 * InitialRMSError Then
+                    If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                         'sorted
                         StillPossProb = False
                         NoOfRubbishLeads = 0
@@ -761,7 +910,7 @@ errorhandler:
                 If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                 RMSErrorLead = CalcRMSStriking()
 
-                If RMSErrorLead <= 3 * InitialRMSError Then
+                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                     'sorted
                     StillPossProb = False
                     NoOfRubbishLeads = 0
@@ -784,7 +933,7 @@ errorhandler:
                 If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                 RMSErrorLead = CalcRMSStriking()
 
-                If RMSErrorLead <= 3 * InitialRMSError Then
+                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                     'sorted
                     StillPossProb = False
                     NoOfRubbishLeads = 0
@@ -814,7 +963,7 @@ errorhandler:
                     If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                     RMSErrorLead = CalcRMSStriking()
 
-                    If RMSErrorLead <= 3 * InitialRMSError Then
+                    If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                         'sorted
                         StillPossProb = False
                         NoOfRubbishLeads = 0
@@ -844,7 +993,7 @@ errorhandler:
                 glbStatsEndRow = glbStatsStartRow + Inc
                 RMSErrorLead = CalcRMSStriking()
 
-                If RMSErrorLead <= 3 * InitialRMSError Then
+                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                     'sorted
                     StillPossProb = False
                     NoOfRubbishLeads = 0
@@ -865,7 +1014,7 @@ errorhandler:
                 If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                 RMSErrorLead = CalcRMSStriking()
 
-                If RMSErrorLead <= 3 * InitialRMSError Then
+                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                     'sorted
                     StillPossProb = False
                     NoOfRubbishLeads = 0
@@ -875,9 +1024,7 @@ errorhandler:
             End If
 
             SavedRMSResults(8) = 0
-            If StillPossProb And
-              Not (glbMethodName = "Stedman" Or glbMethodName = "Erin" Or
-              glbMethodName = "Cloisters") Then
+            If StillPossProb And Not StedmanType Then
                 'still a lot of errors (8th)
                 'maybe plain lead end then go again, straightaway
                 glbBob = ""
@@ -896,7 +1043,7 @@ errorhandler:
                 If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
                 RMSErrorLead = CalcRMSStriking()
 
-                If RMSErrorLead <= 3 * InitialRMSError Then
+                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
                     'sorted
                     StillPossProb = False
                     NoOfRubbishLeads = 0
@@ -904,6 +1051,219 @@ errorhandler:
                     SavedRMSResults(8) = RMSErrorLead
                 End If
             End If
+            Dim oldLL As Integer
+            oldLL = glbLL
+            If StillPossProb And Not glbIsOdd Then
+                '?new method, so find ?new lead-length
+                'don't bother if ringing an odd-bell method;
+                glbLL = DiscoverLL(LEMinusRow - Inc + 2, glbLastPlace)
+                If glbLL = 0 Then
+                    'don't give up!
+                    'assume it's the same as before.  Might just be really bad ringing,
+                    glbLL = oldLL
+                End If
+#If RunFromCommandLine Then
+        
+                Path2Z = Environment.CurrentDirectory & "\CCCBR_lib\z" & Format$(glbLastPlace) & ".cdb"
+#Else
+                Path2Z = "C:\Users\Martin\Documents\VS2019\CCCBR_lib\z" & Format$(glbLastPlace) & ".cdb"
+#End If
+                Filenum = FreeFile()
+                FileOpen(Filenum, Path2Z, OpenMode.Input)
+
+                MethodFound = False
+
+                lclStartRow = LEMinusRow - Inc + 2 - glbLL
+
+                'to compensate first time for glbll increment
+                Do
+                    lclStartRow += glbLL
+                    If lclStartRow - 1 + glbLL > glbEndRow Then
+                        ErrorLog("!!! Cannot follow the ringng at row " & lclStartRow)
+                        glbSuccess = False
+                        Exit Do
+                    End If
+
+                    'grab a lead of PN's into glbFindPN array, including lead end
+
+                    If DiscoverPNList(lclStartRow, glbLL) Then
+                        'look up method - exclude lead end in case of a call
+                        If DiscoverMethod(glbLL, Filenum) Then
+
+
+                            MethodFound = True
+
+                            If glbMethodName = "St Augustine Bob" Then
+                                glbMethodName = "Grandsire"
+                                'assume band is ringing Grandsire with singles rather than
+                                'St Augustine (Triples)
+                            End If
+                            If glbMethodName = "Single Surrey Bob" Then
+                                glbMethodName = "Grandsire"
+                                'Single Surrey Bob = Grandsire (triples) with bobs
+                            End If
+                            If glbMethodName = "Newbury Old Bob" Then
+                                glbMethodName = "Grandsire"
+                                'assume band is ringing bob course of Grandsire rather than
+                                'Newbury Old Bob (Doubles)
+                                'Thanks Ben (Waller)!
+                            End If
+                            If glbMethodName = "Single St Hilda's Bob" Then
+                                glbMethodName = "Plain Bob"
+                                'Single St Hilda's Bob (Minor)
+                                '= Bobbed course of Plain Bob
+                            End If
+
+                            no_of_method_changes += 1
+
+                            ReDim Preserve MethodNames(no_of_method_changes + 1)
+
+                            MethodNames(no_of_method_changes + 1) = glbMethodName
+
+                            Exit Do
+                        End If
+                    End If
+
+                    FileClose(Filenum) 'start again for next lead
+                    FileOpen(Filenum, Path2Z, OpenMode.Input)
+
+                Loop
+                FileClose(Filenum)
+
+
+                If MethodNames(no_of_method_changes + 1) = MethodNames(no_of_method_changes) Then
+                    'haven't actually got a new method!
+                    MethodNames(no_of_method_changes + 1) = ""
+                    no_of_method_changes -= 1
+
+
+                Else  'end if line 1431!
+
+                    'have new method name so generate some rows of the new method
+                    'first get the new method place notation
+
+                    MethodName = glbMethodName
+                    Select Case glbLastPlace
+                        Case 4
+                            MethodName &= " Minimus"
+                        Case 5
+                            MethodName &= " Doubles"
+                        Case 6
+                            MethodName &= " Minor"
+                        Case 7
+                            MethodName &= " Triples"
+                        Case 8
+                            MethodName &= " Major"
+                        Case 9
+                            MethodName &= " Caters"
+                        Case 10
+                            MethodName &= " Royal"
+                        Case 11
+                            MethodName &= " Cinques"
+                        Case 12
+                            MethodName &= " Maximus"
+                    End Select
+                    GetPlaceNotation(MethodName, Format$(glbLastPlace))
+                    'look up PN from CCCBR library and set up glbCCCBR_PN and glbLL
+                    'now set more stuff up, e.g. call options
+                    PrepGenerateRows(glbMethodName, IsOdd)
+                    'clear out existing stuff
+                    ClearRAfrom(lclStartRow)
+                    'and finally generate rows
+                    GenerateRows(lclStartRow, "M")
+
+                    GlbAnalyse()
+
+                    Inc = glbLL
+                    LEMinusRow = lclStartRow - 2 'not sure why the - 2 is needed but it is
+
+                    'now see what happens over the lead end and next lead
+                    LEMinusRow += Inc
+                    glbStatsStartRow = LEMinusRow - Inc
+                    glbStatsEndRow = glbStatsStartRow + Inc
+                    If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
+                    RMSErrorLead = CalcRMSStriking()
+
+                    If (RMSErrorLead = -1 Or RMSErrorLead / glbNo_Of_Bells > 133) Then
+                        '133 is a somewhat arbitrary value. Allows JH's QP of Bob Minor to be
+                        'analysed.  Need some sort of maximum  to flag hopeless floundering.
+                        'major problem
+                        CreateTouchScript()
+                        ErrorLog("!!! Calc RMS Error at LE " & LEMinusRow)
+                        glbSuccess = False
+                        Exit Sub
+                    End If
+                    If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
+                        StillPossProb = False
+                        NoOfRubbishLeads = 0
+                        'carry on, plain lead
+                    Else
+                        'get call PN, work out call, try it.
+                        If TwoElementCall Then
+                            CallPN = DiscoverPN(LEMinusRow - Inc + 1)
+                            If (glbLastPlace Mod 2 = 1) And
+                                    (glbNo_Of_Bells Mod 2 = 0) And
+                                    CallPN <> "?" Then
+                                'strip tenor behind part for odd-bell methods being rung
+                                'on an even number of bells
+                                CallPN = Left(CallPN, Len(CallPN) - 1)
+                            End If
+
+                            CallPN2 = DiscoverPN(LEMinusRow - Inc + 2)
+                            If (glbLastPlace Mod 2 = 1) And
+                                    (glbNo_Of_Bells Mod 2 = 0) And
+                                     CallPN <> "?" Then
+                                'strip tenor behind part for odd-bell methods being rung
+                                'on an even number of bells
+                                CallPN2 = Left(CallPN2, Len(CallPN2) - 1)
+                            End If
+                            If CallPN = "?" Or CallPN2 = "?" Then
+                                CallPN = "?"
+                            Else
+                                CallPN = CallPN & "," & CallPN2
+                            End If
+                        Else
+                            CallPN = DiscoverPN(LEMinusRow - Inc + 1)
+                            If (glbLastPlace Mod 2 = 1) And
+                                    (glbNo_Of_Bells Mod 2 = 0) And
+                                     CallPN <> "?" Then
+                                'strip tenor behind part for odd-bell methods being rung
+                                'on an even number of bells
+                                CallPN = Left(CallPN, Len(CallPN) - 1)
+                            End If
+                        End If
+                        'CallPN will be something like "14", "147", "3,123", "?"
+                        If CallPN <> "?" Then
+                            'does the call correspond with something we recognise?
+                            If CallPN = glbBob1 Or CallPN = glbBob2 Then
+                                glbBob = CallPN
+                            End If
+                            If CallPN = glbSingle1 Or CallPN = glbSingle2 Then
+                                glbSingle = CallPN
+                            End If
+                            If glbBob <> "" Or glbSingle <> "" Then
+                                If TwoElementCall Then
+                                    ImplementCall(CallPN, "", LEMinusRow - Inc + 2)
+                                Else
+                                    ImplementCall(CallPN, "", LEMinusRow - Inc + 1)
+                                End If
+                                glbStatsStartRow = LEMinusRow - Inc
+                                glbStatsEndRow = LEMinusRow
+                                If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
+                                RMSErrorLead = CalcRMSStriking()
+
+                                If RMSErrorLead <= constErrorAllowance * InitialRMSError Then
+                                    'sorted
+                                    StillPossProb = False
+                                    NoOfRubbishLeads = 0
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+
+
 
             If StillPossProb Then
                 'check which call gave best result, then implement that call
@@ -927,7 +1287,14 @@ errorhandler:
                             ImplementCall(glbNormal, "", LEMinusRow - Inc + 2)
                         Else
                             ImplementCall(glbNormal, "", LEMinusRow - Inc + 1)
+                            If Right$(glbPNList(LEMinusRow - Inc + 1), 1) = "M" Then
+                                glbPNList(LEMinusRow - Inc + 1) =
+                                Replace(glbPNList(LEMinusRow - Inc + 1), "M", "")
+                            End If
+
                         End If
+
+
 
                     Case 2
                         'bob gave best results
@@ -936,6 +1303,10 @@ errorhandler:
                             ImplementCall(glbBob, "", LEMinusRow - Inc + 2)
                         Else
                             ImplementCall(glbBob, "", LEMinusRow - Inc + 1)
+                            If Right$(glbPNList(LEMinusRow - Inc + 1), 1) = "M" Then
+                                glbPNList(LEMinusRow - Inc + 1) =
+                                Replace(glbPNList(LEMinusRow - Inc + 1), "M", "")
+                            End If
                         End If
                     Case 3
                         'single gave best results
@@ -945,6 +1316,10 @@ errorhandler:
                             ImplementCall(glbSingle, "", LEMinusRow - Inc + 2)
                         Else
                             ImplementCall(glbSingle, "", LEMinusRow - Inc + 1)
+                            If Right$(glbPNList(LEMinusRow - Inc + 1), 1) = "M" Then
+                                glbPNList(LEMinusRow - Inc + 1) =
+                                Replace(glbPNList(LEMinusRow - Inc + 1), "M", "")
+                            End If
                         End If
                     Case 4
                         'alternative single (e.g. in Stedman Doubles) gave best results
@@ -952,6 +1327,10 @@ errorhandler:
                         glbBob = ""
                         glbSingle = glbSingle2
                         ImplementCall(glbSingle, "", LEMinusRow - Inc + 1)
+                        If Right$(glbPNList(LEMinusRow - Inc + 1), 1) = "M" Then
+                            glbPNList(LEMinusRow - Inc + 1) =
+                                Replace(glbPNList(LEMinusRow - Inc + 1), "M", "")
+                        End If
                     Case 5
                         'bob followed by go again gave best results
                         glbBob = glbBob1
@@ -977,6 +1356,10 @@ errorhandler:
                         'alternative bob gave best results
                         glbBob = glbBob2
                         ImplementCall(glbBob, "", LEMinusRow - Inc + 1)
+                        If Right$(glbPNList(LEMinusRow - Inc + 1), 1) = "M" Then
+                            glbPNList(LEMinusRow - Inc + 1) =
+                                Replace(glbPNList(LEMinusRow - Inc + 1), "M", "")
+                        End If
 
                     Case 8
                         'plain lead followed by go again gave best result
@@ -996,6 +1379,7 @@ errorhandler:
                 NoOfRubbishLeads += 1
                 If NoOfRubbishLeads > 2 Then
                     ErrorLog("!!! Cannot follow the touch at LE " & LEMinusRow - Inc)
+                    glbSuccess = False
                     CreateTouchScript()
                     Exit Sub
                 End If
@@ -1045,7 +1429,14 @@ errorhandler:
                 End If
             End If
         Loop Until LEMinusRow >= glbEndRow
-        glbStatsStartRow = 1    'other subs may need this (Cirel thing?)
+        If no_of_method_changes > 0 Then
+            glbMethodName = MethodNames(1)
+            For i = 2 To no_of_method_changes + 1
+                glbMethodName = glbMethodName & " & " & MethodNames(i)
+            Next
+        End If
+
+        ' glbStatsStartRow = 1    'other subs may need this (Cirel thing?)
         CreateTouchScript()
     End Sub
     Private Sub CreateTouchScript()
@@ -1083,9 +1474,7 @@ errorhandler:
         Filenum = FreeFile()
 
         FileOpen(Filenum, glbOutputFile, OpenMode.Append)
-        'FileOpen(Filenum, "C:\Users\Martin\Documents\vs2019\MethodName.txt", OpenMode.Append)
         PrintLine(Filenum, Message)
-        'WriteLine(Filenum, Message)
         FileClose(Filenum)
     End Sub
 
@@ -1137,9 +1526,9 @@ errorhandler:
             For m = 1 To glbNo_Of_Bells
                 glbRowsArray(n, m) = UnBelvert(m)
             Next
-            glbPNList(n) = "R"
+            If n < glbEndRow Then glbPNList(n) = "R"
         Next
-        'End If
+
         glbRow = n
     End Sub
 
@@ -1237,6 +1626,7 @@ errorhandler:
         Lead_error = False
         If Not (((glbNo_Of_Bells) > 3) And ((glbNo_Of_Bells) < 13)) Then
             ErrorLog("!!! Cannot analyse this data: wrong format: Analysis error")
+            glbSuccess = False
             Exit Sub
         End If
 
@@ -1444,6 +1834,7 @@ errorhandler:
         Exit Sub
 errorhandler:
         ErrorLog("!!! Analyse Error: " + Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
     End Sub
 
@@ -1454,7 +1845,7 @@ errorhandler:
         'then sets the code for the row ("L", "B", etc)
         Dim Rounds As String, RowString As String
         Dim GenOp(3) As String
-        Dim Code As Char
+        Dim Code As String
         Dim invalidPN As Boolean, StedmanType As Boolean
         Dim NoOfGenOps As Byte
         Dim b As Byte, Bell As Byte, Pos As Byte, Place As Byte, LastPlace As Byte
@@ -1486,6 +1877,7 @@ errorhandler:
         'issue, and a little awkward logic to sort out...
         If invalidPN Then
             ErrorLog("!!! No call selected, or invalid call")
+            glbSuccess = False
             'do nothing
         ElseIf OtherOp = "Rounds!" Then
             GenerateRounds(Row, 30)  '30 rows of rounds (sub updates glbrow)
@@ -1544,6 +1936,7 @@ errorhandler:
                     Code = "L"
                 End If
                 glbPNList(RowNo) = CallGenOp & Code
+
             ElseIf Not StedmanType Then
                 'two genops to execute, e.g. "38,1238" for a single in Grandsire Major
                 'generate the two gen ops
@@ -1599,6 +1992,7 @@ errorhandler:
 
                 If NoOfGenOps > 3 Then
                     ErrorLog("!!! Too many operations in call.")
+                    glbSuccess = False
                     Exit Sub
                 End If
 
@@ -1619,7 +2013,6 @@ errorhandler:
                 For b = 1 To NoOfGenOps
                     glbRow = RowNo      'executePN requires glbrow is set up
                     ExecutePN(GenOp(b))
-
                     If glbBob <> "" Then
                         Code = "B"
                     ElseIf glbSingle <> "" Then
@@ -1635,15 +2028,16 @@ errorhandler:
                     glbPNList(RowNo) = GenOp(b) & Code
                     RowNo += 1
                 Next
+
                 'done the call.
                 'Now check to see if rounds has come up
                 RowString = ""
                 For b = 1 To glbNo_Of_Bells
-                    RowString = RowString & glbRowsArray(RowNo, b)
+                    RowString &= glbRowsArray(RowNo, b)
                 Next
                 If RowString = Rounds Then
                     'call has brought about rounds so add some rounds to glbrowsarray
-                    glbThatsAllRow = RowNo + 1
+                    glbThatsAllRow = RowNo
                     GenerateRounds(RowNo + 1, 60) 'glbrow gets updated by GenerateRounds
                     'and clear the rows array
                     ClearRAfrom(glbRow)
@@ -1651,7 +2045,7 @@ errorhandler:
                     RowNo = glbRow - 1
                     Do Until glbPNList(RowNo) = ""
                         glbPNList(RowNo) = ""
-                        RowNo = RowNo + 1
+                        RowNo += 1
                     Loop
                     ReachedRounds = True
                 Else
@@ -1719,7 +2113,12 @@ errorhandler:
             If RowString <> Rounds Then 'have not reached rounds
                 glbThatsAllRow = 0  'plain lead may have brought up rounds, but call has
                 'extended the touch
-                GenerateRows(RowNo + 1, "")  'generate two more courses, no annotation
+                If InStr(glbPNList(RowNo), "M") <> 0 Then
+                    GenerateRows(RowNo + 1, "M")
+                Else
+                    GenerateRows(RowNo + 1, "")  'generate two more courses, no annotation
+                End If
+
             Else
                 'call has brought about rounds so add some rounds to glbrowsarray
                 glbThatsAllRow = RowNo
@@ -1742,10 +2141,15 @@ errorhandler:
         'except when called by mnuSJ - 25/10/19
 
         GlbAnalyse()
+
+        glbBob = ""
+        glbSingle = ""
+        glbNormal = ""
         Exit Sub
 
 errorhandler:
         ErrorLog("!!! Error in Implement Call routine: " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
 
     End Sub
@@ -1925,6 +2329,7 @@ errorhandler:
 
 errorhandler:
         ErrorLog("!!! PrepGenerateRows Error: " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
     End Sub
 
@@ -1962,10 +2367,8 @@ errorhandler:
         'End If
         MethodName = glbMethodName
         Select Case glbLastPlace
-            Case 3
-                MethodName &= " Singles"
             Case 4
-                MethodName &= " MInimus"
+                MethodName &= " Minimus"
             Case 5
                 MethodName &= " Doubles"
             Case 6
@@ -2033,6 +2436,7 @@ errorhandler:
         Else
             ErrorLog("!!! Choose Method Error: " & Err.Number & ": " & Err.Description)
         End If
+        glbSuccess = False
 
     End Sub
 
@@ -2072,6 +2476,7 @@ errorhandler:
 
         If glbEndRow = 0 Then
             ErrorLog("!!! No data loaded")
+            glbSuccess = False
             Exit Sub
         End If
 
@@ -2091,7 +2496,6 @@ errorhandler:
             Else
                 glbLastPlace = glbNo_Of_Bells
             End If
-            'cmbNoOfChBells.Text = Format$(no_of_bells_ch)
             glbLL = DiscoverLL(lclStartRow, glbLastPlace)
             If glbLL = 0 Then
                 'might be a principle
@@ -2120,17 +2524,17 @@ errorhandler:
             lclStartRow += glbLL
             If lclStartRow - 1 + glbLL > glbEndRow Then Exit Do
 
-            'grab a lead of PN's into glbMethodPN array, including lead end
+            'grab a lead of PN's into glbfindpn array, including lead end
 
             If DiscoverPNList(lclStartRow, glbLL) Then
 
                 'if the last PN is "14" or "1234" change to "12" before looking up the method
                 '(if last PN is Bob or Single change to plain lead...)
-                'If glbMethodPN(glbLL) = "14" Or glbMethodPN(glbLL) = "1234" Then _
-                '  glbMethodPN(glbLL) = "12"
-                'If glbMethodPN(glbLL) = "14" & glbLastPlace & glbNo_Of_Bells Or _
-                '  glbMethodPN(glbLL) = "1234" & glbLastPlace & glbNo_Of_Bells Then _
-                '  glbMethodPN(glbLL) = "12" & glbLastPlace & glbNo_Of_Bells
+                'If glbfindpn(glbLL) = "14" Or glbfindpn(glbLL) = "1234" Then _
+                '  glbfindpn(glbLL) = "12"
+                'If glbfindpn(glbLL) = "14" & glbLastPlace & glbNo_Of_Bells Or _
+                '  glbfindpn(glbLL) = "1234" & glbLastPlace & glbNo_Of_Bells Then _
+                '  glbfindpn(glbLL) = "12" & glbLastPlace & glbNo_Of_Bells
                 '***This is not a good idea because some methods are nothing like others,
                 'but still have 14 or 1234 LE
                 'e.g. St Mary Bourne Bob Minor, Waterloo Reverse Bob Major, Oxford Surprise Major
@@ -2145,14 +2549,25 @@ errorhandler:
                     'Still need...
                     If glbMethodName = "St Augustine Bob" Then
                         glbMethodName = "Grandsire"
-                        'assume band is ringing bob course of Grandsire rather than
+                        'assume band is ringing Grandsire with Singles rather than
                         'St Augustine (Triples)
                     End If
+                    If glbMethodName = "Single Surrey Bob" Then
+                        glbMethodName = "Grandsire"
+                        'Single Surrey Bob = Grandsire (triples) with bobs
+                    End If
+
                     If glbMethodName = "Newbury Old Bob" Then
                         glbMethodName = "Grandsire"
                         'assume band is ringing bob course of Grandsire rather than
                         'Newbury Old Bob (Doubles)
                         'Thanks Ben (Waller)!
+                    End If
+
+                    If glbMethodName = "Single St Hilda's Bob" Then
+                        glbMethodName = "Plain Bob"
+                        'SSHB = PB with 14 LE
+                        'auto z-file tweak doesn't catch this one!
                     End If
 
                     Exit Do
@@ -2175,7 +2590,7 @@ errorhandler:
                 lclStartRow += glbLL
                 If lclStartRow - 1 + glbLL > glbEndRow Then Exit Do
 
-                're-grab a lead of PN's into glbMethodPN array, including lead end
+                're-grab a lead of PN's into glbfindpn array, including lead end
                 If DiscoverPNList(lclStartRow, glbLL) Then
 
                     '...and look up method, based on ringing, excluding lead end
@@ -2184,12 +2599,12 @@ errorhandler:
                         'neeed to check last two PN's are either the bob or single for the
                         'method found
                         glbMethodFound = True
-                        'PN = glbMethodPN(glbLL - 1) 'these are the last two pns as grabbed
-                        'PN2 = glbMethodPN(glbLL)
+                        'PN = glbfindpn(glbLL - 1) 'these are the last two pns as grabbed
+                        'PN2 = glbfindpn(glbLL)
                         'GetPlaceNotation(glbMethodName, Format(glbLastPlace))
                         'IsOdd = glbLastPlace Mod 2 = 1
                         'PrepGenerateRows(glbMethodName, IsOdd) 'set up calls for guessed-at method
-                        '(and loads glbMethodPN with
+                        '(and loads glbfindpn with
                         ' actual method PN list)
                         'CallPN1 = glbBob1
                         'CallPN2 = glbSingle1
@@ -2302,13 +2717,11 @@ errorhandler:
             'relied upon, i.e. single (like Plain Bob) or double (like Grandsire) element
         Else
             glbMethodName = "Unrecognised"
-            glbTouchScript = "Call, Row" & vbCrLf & "M," & glbStartRow - 1
+            glbTouchScript = "Call, Row" & vbCrLf & "M," & glbStartRow
         End If
 
         'list the stage names for the benefit of glbTouchScript entry of method name
         Select Case glbLastPlace
-            Case 3
-                glbStage = "Singles"
             Case 4
                 glbStage = "Minimus"
             Case "5"
@@ -2334,11 +2747,12 @@ errorhandler:
 
 errorhandler:
         ErrorLog("!!! Error in DetectMethod " & Err.Number & ": " & Err.Description)
+        glbSuccess = False
 
     End Sub
 
     Private Function DiscoverMethod(ByVal CheckLength As Integer, Filenum As Long) As Boolean
-        'looks through given (open) z-file looking for glbMethodPN
+        'looks through given (open) z-file looking for glbfindpn
         'checking over CheckLength entries.  Returns True if PN is found.
         Dim i As Integer, j As Integer, k As Integer
         Dim PNpos As Byte, info As GlbMethodRecord
@@ -2376,12 +2790,12 @@ errorhandler:
                 End If
                 PNpos = 1
                 Do
-                    If info.PNList(PNpos) > glbMethodPN(PNpos) Then
+                    If info.PNList(PNpos) > glbFindPN(PNpos) Then
                         'gone past possible match in z file
                         DiscoverMethod = False
                         Exit Function
                     End If
-                    If info.PNList(PNpos) = glbMethodPN(PNpos) Then
+                    If info.PNList(PNpos) = glbFindPN(PNpos) Then
                         'go to next PN in list
                         PNpos += 1
                     Else
@@ -2411,20 +2825,25 @@ errorhandler:
     End Function
 
     Private Function DiscoverOddMethod() As Boolean
-        'looks at first 8 rows after glbStartRow; if at least 6 rows are generated
-        'by a PN whose right-most value = glbno_of_bells then odd
+        'looks at first 8 rows after glbStartRow; if at least 6 rows have
+        'last bell = glbno_of_bells then odd
         'Assumes even number of bells are ringing.
+
         Dim Count As Byte, i As Byte
         DiscoverOddMethod = False
+        glbIsOdd = False
 
         If glbEndRow < glbStartRow + 8 Then Exit Function
 
-        DiscoverPNList(glbStartRow, 8)
         Count = 0
         For i = 1 To 8
-            If Right$(glbMethodPN(i), 1) = UnBelvert(glbNo_Of_Bells) Then Count += 1
+            If glbData(glbStartRow + i, glbNo_Of_Bells).bellch = UnBelvert(glbNo_Of_Bells) Then Count += 1
         Next
-        If Count > 5 Then DiscoverOddMethod = True
+        If Count > 5 Then
+            DiscoverOddMethod = True
+            glbIsOdd = True   'for use by DiscoverTouch
+            '(doesn't try to discover a change of method if IsOdd)
+        End If
     End Function
 
     Private Function DiscoverPN(Row As Integer) As String
@@ -2461,7 +2880,7 @@ errorhandler:
     End Function
 
     Private Function DiscoverPNList(StartRow As Integer, n As Integer) As Boolean
-        'grab the first n place notations into glbmethodPN array
+        'grab the first n place notations into glbfindpn array
         'returns True if all PN's look OK, but False if any bell is seen to jump
         'more than one position in the any of the n PN's examined
         Dim i As Integer
@@ -2470,12 +2889,12 @@ errorhandler:
 
         'first clear the array
         For i = 1 To MethodPNLength_const
-            glbMethodPN(i) = ""
+            glbFindPN(i) = ""
         Next
         'now grab the pn's
         For i = 1 To n
-            glbMethodPN(i) = DiscoverPN(StartRow + i - 1)
-            If glbMethodPN(i) = "?" Then
+            glbFindPN(i) = DiscoverPN(StartRow + i - 1)
+            If glbFindPN(i) = "?" Then
                 DiscoverPNList = False
                 'don't exit for benefit of DiscoverOddMethod sub
             End If
@@ -2488,21 +2907,22 @@ errorhandler:
         'PN with <= 4 places on three consectutive occasions to be more certain of
         'start row. Thus 213456 followed by 123456 is not start of method.
         Dim Row As Integer
+        Dim lclMethodPN(MethodPNLength_const) As String
 
         If FromRow Mod 2 = 1 Then Row = FromRow Else Row = FromRow - 1
 
         Do
             Row += 2
-            glbMethodPN(1) = DiscoverPN(Row)
-            glbMethodPN(2) = DiscoverPN(Row + 1)
-            glbMethodPN(3) = DiscoverPN(Row + 2)
+            lclMethodPN(1) = DiscoverPN(Row)
+            lclMethodPN(2) = DiscoverPN(Row + 1)
+            lclMethodPN(3) = DiscoverPN(Row + 2)
             If Row > glbEndRow Then
                 Row = 0
                 Exit Do
             End If
-        Loop Until (Len(glbMethodPN(1)) <= 4) And
-                   (Len(glbMethodPN(2)) <= 4) And
-                   (Len(glbMethodPN(3)) <= 4)
+        Loop Until (Len(lclmethodpn(1)) <= 4) And
+                   (Len(lclmethodpn(2)) <= 4) And
+                   (Len(lclmethodpn(3)) <= 4)
 
         glbStartRow = Row
 
@@ -2546,9 +2966,11 @@ errorhandler:
 
         If glbNo_Of_Bells > 12 Then
             ErrorLog("!!! Too many bells! Can only deal with 4 to 12")
+            glbSuccess = False
             Exit Sub
         ElseIf glbNo_Of_Bells < 4 Then
             ErrorLog("!!! Too few bells! Can only deal with 4 to 12")
+            glbSuccess = False
             Exit Sub
         End If
 
@@ -2593,6 +3015,7 @@ errorhandler:
         Else
             ErrorLog("!!! Open Hawkear CSV file Error: " & Err.Number & ": " & Err.Description)
         End If
+        glbSuccess = False
 
     End Sub
     Private Sub OpenCirelFile(Filename As String)
@@ -2691,6 +3114,7 @@ errorhandler:
 errorhandler:
 
         ErrorLog("!!! Open .crl file Error: " & Err.Description)
+        glbSuccess = False
 
     End Sub
 End Module
