@@ -4,7 +4,7 @@ Option Compare Text
 Module GetMethodAndTouch
 #Const RunFromCommandLine = True
 
-    Public Const Version_const = "1.0.6.0"
+    Public Const Version_const = "1.0.6.1"
     Public Const Hand = -1  '= True
     Public Const Back = 0   '= False
     Public Const No_Of_Rows_Const = 6500
@@ -2599,43 +2599,19 @@ errorhandler:
                         'neeed to check last two PN's are either the bob or single for the
                         'method found
                         glbMethodFound = True
-                        'PN = glbfindpn(glbLL - 1) 'these are the last two pns as grabbed
-                        'PN2 = glbfindpn(glbLL)
-                        'GetPlaceNotation(glbMethodName, Format(glbLastPlace))
-                        'IsOdd = glbLastPlace Mod 2 = 1
-                        'PrepGenerateRows(glbMethodName, IsOdd) 'set up calls for guessed-at method
-                        '(and loads glbfindpn with
-                        ' actual method PN list)
-                        'CallPN1 = glbBob1
-                        'CallPN2 = glbSingle1
-                        'If InStr(CallPN1, ",") = 0 And InStr(CallPN2, ",") = 0 Then
-                        'just one LE PN
-                        'If (glbLastPlace Mod 2 = 1) And (glbNo_Of_Bells = glbLastPlace + 1) Then
-                        'delete the tenor behing part of the PN
-                        'PN2 = Left(PN2, Len(PN2) - 1)
-                        'End If
-                        'if last but one pn as grabbed <> last but one pn in method
-                        'then method not the right one
-                        'If PN <> glbMethodPN(glbLL - 1) Then glbMethodFound = False
-                        'if last pn as grabbed <> bob or single then method not the right one
-                        'If Not ((PN2 = CallPN1) Or (PN2 = CallPN2)) Then glbMethodFound = False
-                        'Else
-                        'calls comprise two pn's
-                        'If (glbLastPlace Mod 2 = 1) And (glbNo_Of_Bells = glbLastPlace + 1) Then
-                        'delete the tenor behing part of the PN's
-                        'PN = Left(PN, Len(PN) - 1)
-                        'PN2 = Left(PN2, Len(PN2) - 1)
-                        'End If
-                        'PN = PN & "," & PN2
-                        'If Not ((PN = CallPN1) Or (PN = CallPN2)) Then glbMethodFound = False
-                        'End If
+
 
                         If glbMethodName = "St Augustine Bob" Or
-                           glbMethodName = "Union" Then
+                           glbMethodName = "Union" Or
+                           glbMethodName = "Single Surrey Bob" Or
+                           glbMethodName = "Newbury Old Bob" Then
                             glbMethodName = "Grandsire"
                         End If
                         'assume band is ringing bob course of Grandsire rather than
                         'St Augustine (Triples) or Union
+                        If glbMethodName = "Single St Hilda's Bob" Then
+                            glbMethodName = "Plain Bob"
+                        End If
                         If glbMethodFound Then
                             Exit Do
                         End If
@@ -2776,6 +2752,7 @@ errorhandler:
                 info.PNList(k) = Mid$(CirelPNStr, i, j - i)
                 i = j + 1
                 k += 1
+                If k > glbLL Then Exit Do
             Loop
             If k <> glbLL Then
                 'no of entries in PN list is wrong so don't bother to check contents
