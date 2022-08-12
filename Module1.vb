@@ -4,7 +4,7 @@ Option Compare Text
 Module GetMethodAndTouch
 #Const RunFromCommandLine = True
 
-    Public Const Version_const = "1.0.6.1"
+    Public Const Version_const = "1.0.6.2"
     Public Const Hand = -1  '= True
     Public Const Back = 0   '= False
     Public Const No_Of_Rows_Const = 6500
@@ -136,6 +136,9 @@ Module GetMethodAndTouch
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Kent12_29_03_16.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Rounds8a_29_03_16.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\TrebleBob12_29_03_16.crl"
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.blx.crl"
+        glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.bl.csv"
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.blx.csv"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Doesnotexist.csv"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Bow.20150315-1810.s12t12.081216-001.bl.csv" '  (Stedman Cinques)
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\asdasdasd.csv" '  (Stedman Cinques)
@@ -1079,7 +1082,7 @@ errorhandler:
                 Do
                     lclStartRow += glbLL
                     If lclStartRow - 1 + glbLL > glbEndRow Then
-                        ErrorLog("!!! Cannot follow the ringng at row " & lclStartRow)
+                        ErrorLog("!!! Cannot follow the ringing at row " & lclStartRow)
                         glbSuccess = False
                         Exit Do
                     End If
@@ -1927,7 +1930,7 @@ errorhandler:
                 End If
                 glbRow = RowNo  'for benefit of executePN
                 ExecutePN(CallGenOp)
-
+                Code = ""  'to avoid warning about null reference
                 If glbBob <> "" Then
                     Code = "B"
                 ElseIf glbSingle <> "" Then
@@ -1967,7 +1970,7 @@ errorhandler:
                 RowNo += 1
                 glbRow = RowNo
                 ExecutePN(GenOp(2))
-
+                Code = ""   'to avoid warning about null reference
                 If glbBob <> "" Then
                     Code = "B"
                 ElseIf glbSingle <> "" Then
@@ -2013,6 +2016,7 @@ errorhandler:
                 For b = 1 To NoOfGenOps
                     glbRow = RowNo      'executePN requires glbrow is set up
                     ExecutePN(GenOp(b))
+                    Code = ""  'to avoid warning about null reference
                     If glbBob <> "" Then
                         Code = "B"
                     ElseIf glbSingle <> "" Then
