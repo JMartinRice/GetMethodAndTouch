@@ -4,7 +4,7 @@ Option Compare Text
 Module GetMethodAndTouch
 #Const RunFromCommandLine = True
 
-    Public Const Version_const = "1.0.6.2"
+    Public Const Version_const = "1.0.6.3"
     Public Const Hand = -1  '= True
     Public Const Back = 0   '= False
     Public Const No_Of_Rows_Const = 6500
@@ -93,6 +93,7 @@ Module GetMethodAndTouch
     'SHOULD be
     Public glbShbData(0 To No_Of_Rows_Const, No_Of_Bells_Const) As BellTimeStructure
     'gives bell and time that SHOULD be at row, position
+    Public glbMethodNames() As String   'list of method names used in a touch of spliced
 
     Sub Main()
         '***comment out lines here and in Detectmethod and GetPlaceNotation 
@@ -137,7 +138,7 @@ Module GetMethodAndTouch
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Rounds8a_29_03_16.crl"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\TrebleBob12_29_03_16.crl"
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.blx.crl"
-        glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.bl.csv"
+        'glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.bl.csv"
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\bow.20190321-1917.02-BZ-Spliced.topp.blx.csv"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Doesnotexist.csv"
         'glbInputFile = "C:\Users\Martin\Documents\vs2019\Bow.20150315-1810.s12t12.081216-001.bl.csv" '  (Stedman Cinques)
@@ -152,7 +153,7 @@ Module GetMethodAndTouch
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\Walsall.20200308-1520.s12t12.8.0.bl.csv" ' (treble-bobbing)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\peal1.csv" ' (Peal of Cambridge Max, treble backstroke snap ending)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\t1.csv" ' (Lincolnshire Max, "Handstroke uplift")
-        'glbInputFile = "C:\Users\Martin\Documents\VS2019\qweqweqwe.csv" ' (London no 3 spliced with little Max,)
+        glbInputFile = "C:\Users\Martin\Documents\VS2019\qweqweqwe.csv" ' (London no 3 spliced with little Max,)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\uplin.csv" ' (Up maximus, artificial perfect ringing)
         'glbInputFile = "C:\Users\Martin\Documents\VS2019\University_of_Bristol_treble_place_8lin.csv" ' 
 #End If
@@ -180,7 +181,7 @@ errorhandler:
             ' output file spec bad, e.g. missing from second parameter.
             Exit Sub
         Else
-            ErrorLog("!!! " & Err.Number & ": " & Err.Description)
+            ErrorLog("!!! Error " & Err.Number & ": " & Err.Description)
             glbSuccess = False
         End If
 
@@ -708,13 +709,14 @@ errorhandler:
         Dim Filenum As Long
         Dim Path2Z As String
         Dim MethodFound As Boolean, IsOdd As Boolean, StedmanType As Boolean
-        Dim MethodNames() As String, no_of_method_changes As Byte
+        'Dim MethodNames() As String
+        Dim no_of_method_changes As Byte
 
 
         NoOfRubbishLeads = 0
         no_of_method_changes = 0
-        ReDim MethodNames(1)
-        MethodNames(1) = glbMethodName
+        ReDim glbMethodNames(1)
+        glbMethodNames(1) = glbMethodName
 
         StedmanType = glbMethodName Like "stedman" Or
                       glbMethodName Like "erin" Or
@@ -778,7 +780,7 @@ errorhandler:
             'now see what happens over the lead end and next lead
             LEMinusRow += Inc
             glbStatsStartRow = LEMinusRow - Inc
-            Debug.Print(glbStatsStartRow)
+            'Debug.Print(glbStatsStartRow)
             glbStatsEndRow = glbStatsStartRow + Inc
             If glbStatsEndRow > glbEndRow Then glbStatsEndRow = glbEndRow
             RMSErrorLead = CalcRMSStriking()
@@ -1085,6 +1087,7 @@ errorhandler:
                         ErrorLog("!!! Cannot follow the ringing at row " & lclStartRow)
                         glbSuccess = False
                         Exit Do
+                        'don't exit sub since this sub contains the call to CreateTouchScript 
                     End If
 
                     'grab a lead of PN's into glbFindPN array, including lead end
@@ -1119,9 +1122,9 @@ errorhandler:
 
                             no_of_method_changes += 1
 
-                            ReDim Preserve MethodNames(no_of_method_changes + 1)
+                            ReDim Preserve glbMethodNames(no_of_method_changes + 1)
 
-                            MethodNames(no_of_method_changes + 1) = glbMethodName
+                            glbMethodNames(no_of_method_changes + 1) = glbMethodName
 
                             Exit Do
                         End If
@@ -1134,13 +1137,16 @@ errorhandler:
                 FileClose(Filenum)
 
 
-                If MethodNames(no_of_method_changes + 1) = MethodNames(no_of_method_changes) Then
-                    'haven't actually got a new method!
-                    MethodNames(no_of_method_changes + 1) = ""
+                If glbMethodNames(no_of_method_changes + 1) = glbMethodNames(no_of_method_changes) Then
+                    'haven't actually got a new method!  Can't remember why I needed this...
+                    'Perhaps desperately looking to see if I can pick my way through some rubbish,
+                    'and have managed to discover the method for the next lead, but it's
+                    'the same as we're already using...?
+                    ReDim Preserve glbMethodNames(no_of_method_changes)
                     no_of_method_changes -= 1
 
 
-                Else  'end if line 1431!
+                Else
 
                     'have new method name so generate some rows of the new method
                     'first get the new method place notation
@@ -1399,7 +1405,6 @@ errorhandler:
                         RowStr &= glbData(i, j).bellch
                     Next j
                     If RowStr = Rounds Then
-                        'CallDialog.cmbOther.Text = "Rounds!"
                         glbOther = "Rounds!"
                         ImplementCall("", "Rounds!", i)
                         Exit For
@@ -1433,37 +1438,46 @@ errorhandler:
             End If
         Loop Until LEMinusRow >= glbEndRow
         If no_of_method_changes > 0 Then
-            glbMethodName = MethodNames(1)
-            For i = 2 To no_of_method_changes + 1
-                glbMethodName = glbMethodName & " & " & MethodNames(i)
-            Next
+            glbMethodName = "Spliced"
+            'glbMethodName = glbMethodNames(1)
+            'For i = 2 To no_of_method_changes + 1
+            ' glbMethodName = glbMethodName & " & " & glbMethodNames(i)
+            ' Next
         End If
 
         ' glbStatsStartRow = 1    'other subs may need this (Cirel thing?)
         CreateTouchScript()
     End Sub
     Private Sub CreateTouchScript()
-        Dim i As Integer, Code As String
+        Dim i As Integer, Code As String, method_name_index As Byte
         'creates the touch script:
         'read info from glbPNList() array to create glbTouchScript,
         'a csv file recording start row and row-positions of calls
 
-        glbTouchScript = "Call, Row" & vbCrLf
+        glbTouchScript = "Call, Row, Method name (if spliced)" & vbCrLf
 
 
         i = 0
-
+        method_name_index = 1
         Do
             i += 1
             If i > glbEndRow Then Exit Do
             Code = Right$(glbPNList(i), 1)
-            If Code = "B" Or Code = "S" Or Code = "M" Then
+            If Code = "B" Or Code = "S" Then
                 glbTouchScript = glbTouchScript & Code & "," & i + 1 & vbCrLf
                 'i + 1 for consistency with Cirel
                 'gives row in which call has taken effect 
             End If
+            If Code = "M" Then
+                If UBound(glbMethodNames) > 1 And UBound(glbMethodNames) >= method_name_index Then
+                    glbTouchScript = glbTouchScript & "M," & i + 1 & "," & glbMethodNames(method_name_index) & vbCrLf
+                    method_name_index += 1
+                Else
+                    glbTouchScript = glbTouchScript & "M," & i + 1 & vbCrLf
+                End If
+            End If
         Loop
-        If glbThatsAllRow <> 0 Then _
+        If glbThatsAllRow <> 0 And glbThatsAllRow <= glbEndRow Then _
           glbTouchScript = glbTouchScript & "E," & glbThatsAllRow
 
 
